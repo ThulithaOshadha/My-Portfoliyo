@@ -2,3 +2,6 @@ body>header>nav>ol>li{
     color: black;
     font-weight: bold;
 }
+body>header>nav>ol{
+    padding-left: 0px;
+}
