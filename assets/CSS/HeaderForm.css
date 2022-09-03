@@ -22,7 +22,7 @@ header>nav>ul>li{
 
 header>div{
     position: absolute;
-    top: 15px;
+    top: 18px;
     left: 15px;
     width: 30px;
     height: 50%;
@@ -33,4 +33,13 @@ header>div>img{
     height: 100%;
     width: 30px;
     border-radius: 110px;
+}
+
+header>h2{
+    position: absolute;
+    font-family: "Open Sans Semibold";
+    font-weight: bold;
+    top: 4px;
+    left: 55px;
+    font-size: 20px;
 }
