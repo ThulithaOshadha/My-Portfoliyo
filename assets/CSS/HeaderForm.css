@@ -1,7 +1,20 @@
-body>header>nav>ol>li{
-    color: black;
+header{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+header>nav>ul{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
     font-weight: bold;
 }
-body>header>nav>ol{
-    padding-left: 0px;
+
+header>nav>ul>li{
+    display: inline;
+    padding-left: 25px;
+    font-family: "Open Sans Semibold";
 }
