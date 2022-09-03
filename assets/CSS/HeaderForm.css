@@ -39,7 +39,8 @@ header>h2{
     position: absolute;
     font-family: "Open Sans Semibold";
     font-weight: bold;
-    top: 4px;
+    top: 20px;
     left: 55px;
     font-size: 20px;
+    margin: 0;
 }
