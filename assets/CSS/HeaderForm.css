@@ -3,7 +3,7 @@ header{
     width: 100%;
     height: 60px;
     background: white;
-    position: relative;
+    position: fixed;
 }
 
 header>nav>ul{

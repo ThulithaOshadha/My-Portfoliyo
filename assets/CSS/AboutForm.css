@@ -62,3 +62,18 @@
     font-size: 20px;
     height: 50px;
 }
+
+#aboutPage>section:nth-child(2)>aside:nth-child(2)>button{
+    position: absolute;
+    background: #FF3366;
+    width: 142px;
+    height: 35px;
+    top: 175px;
+    left: 0px;
+    border-radius: 10px;
+    border: 0px;
+    color: #D5D5D5;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
