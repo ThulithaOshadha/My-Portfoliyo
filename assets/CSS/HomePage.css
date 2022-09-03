@@ -1,4 +1,4 @@
-main>section:nth-child(1){
+main>#HomePage{
     position: absolute;
     top: 60px;
     width: 100%;

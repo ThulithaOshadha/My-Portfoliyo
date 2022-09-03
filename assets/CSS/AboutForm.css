@@ -1,0 +1,64 @@
+#aboutPage{
+    position: absolute;
+    top: 760px;
+    width: 100%;
+    height: 600px;
+    background: #ECF0F1;
+}
+
+#aboutPage>section:nth-child(1){
+    position: absolute;
+    width: 125px;
+    height: 65px;
+    top: 30px;
+    left: 45%;
+}
+
+#aboutPage>section:nth-child(1)>h1{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF3366;
+
+}
+#aboutPage>section:nth-child(1)>h2{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 40px;
+    color: #2c3e50;
+}
+
+#aboutPage>section:nth-child(2)>aside:nth-child(1)>div{
+    position: absolute;
+    background-image: url("../images/web/about image.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 80%;
+    top: 100px;
+    left: 50px;
+}
+
+#aboutPage>section:nth-child(2)>aside:nth-child(2){
+    position: absolute;
+    border: 1px solid red;
+    top: 20%;
+    left: 30%;
+    width: 69%;
+    height: 77%;
+}
+
+#aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    width: 75%;
+    font-family: "Open Sans";
+    font-size: 20px;
+    height: 50px;
+}
