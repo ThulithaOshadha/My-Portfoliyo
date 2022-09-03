@@ -2,7 +2,7 @@ main>section:nth-child(1){
     position: absolute;
     top: 60px;
     width: 100%;
-    height: 850px;
+    height: 700px;
 
 }
 
@@ -68,6 +68,18 @@ main>#HomePage>aside:nth-child(4)>img{
 }
 
 main>#HomePage>aside:nth-child(2)>nav>button{
-   
-}
+    position: absolute;
+    background: #FF3366;
+    width: 142px;
+    height: 35px;
+    top: 380px;
+    left: 130px;
+    border-radius: 10px;
+    border: 0px;
+    color: #D5D5D5;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+
 
