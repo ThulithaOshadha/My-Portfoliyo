@@ -41,12 +41,12 @@
     height: 80%;
     top: 100px;
     left: 90px;
+    border-radius: 50px;
 
 }
 
 #aboutPage>section:nth-child(2)>aside:nth-child(2){
     position: absolute;
-    border: 1px solid red;
     top: 20%;
     left: 35%;
     width: 58%;
@@ -188,33 +188,66 @@
     left: 0px;
 }
 
-#aboutPage>#myInterests{
-    border: 1px solid red;
+#myInterests{
+    /*border: 1px solid red;*/
     position: absolute;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 50%;
-    height: 2%;
-    
+    width: 560px;
+    height: 30px;
+    bottom: 0px;
+    left: 60px;
 }
 
-#aboutPage>#myInterests>div:nth-child(1){
+#myInterests>div{
+    width: 40px;
+    height: 100%;
+}
+
+#myInterests>div:nth-child(1){
     background-image: url("../images/web/music png.png");
     background-size: cover;
     background-position: center;
 }
 
-#aboutPage>#myInterests>div:nth-child(2){
+#myInterests>div:nth-child(2){
     background-image: url("../images/web/travel png.png");
     background-size: cover;
     background-position: center;
 }
 
-#aboutPage>#myInterests>div:nth-child(3){
+#myInterests>div:nth-child(3){
     background-image: url("../images/web/movie png.png");
     background-size: cover;
     background-position: center;
 }
 
+#interestLogo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 620px;
+    height: 26px;
+    bottom: 0px;
+    left: 100px;
+}
+
+#interestLogo>h3{
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#interestLogo>h3:nth-child(3){
+    padding-right: 10px;
+}
+
+#aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p>a{
+    color: #FF3366;
+    text-decoration: none;
+}
