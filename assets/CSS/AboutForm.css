@@ -40,15 +40,16 @@
     width: 25%;
     height: 80%;
     top: 100px;
-    left: 50px;
+    left: 90px;
+
 }
 
 #aboutPage>section:nth-child(2)>aside:nth-child(2){
     position: absolute;
     border: 1px solid red;
     top: 20%;
-    left: 30%;
-    width: 69%;
+    left: 35%;
+    width: 58%;
     height: 77%;
 }
 
@@ -76,4 +77,14 @@
     font-family: "Open Sans Semibold";
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#aboutPage>section:nth-child(2)>aside:nth-child(2)>section{
+    border: 1px solid red;
+    width: 573px;
+    height: 223px;
+    position: relative;
+    top: 185px;
+    left: 45px;
+
 }

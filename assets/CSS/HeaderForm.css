@@ -4,6 +4,9 @@ header{
     height: 60px;
     background: white;
     position: fixed;
+    z-index: 2;
+    top: 0;
+
 }
 
 header>nav>ul{
@@ -44,3 +47,4 @@ header>h2{
     font-size: 20px;
     margin: 0;
 }
+
