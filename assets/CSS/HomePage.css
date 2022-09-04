@@ -41,29 +41,29 @@ main>#HomePage>section>h4{
     font-weight: bold;
     font-family: "Open Sans Semibold";
     color:  black;
-    font-size: 25px;
+    font-size: 22px;
     margin: 0;
     top: 325px;
     left: 130px;
 }
 
 main>#HomePage>aside:nth-child(4){
+    align-content: space-evenly;
     position: absolute;
-    border: 1px red solid;
-    top: 237px;
-    left: 30px;
-    width: 55px;
-    height: 50%;
+    top: 275px;
+    left: 1px;
+    width: 69px;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-between;
 
 }
 
 main>#HomePage>aside:nth-child(4)>img{
-    position: absolute;
-    width: 60px;
-    height: 60px;
+
+    width: 76px;
+    height: 45px;
     margin: 0px;
 }
 
