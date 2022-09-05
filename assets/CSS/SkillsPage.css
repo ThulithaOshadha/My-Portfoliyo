@@ -1,0 +1,54 @@
+#skillsPage{
+    position: absolute;
+    top: 1910px;
+    width: 100%;
+    height: 550px;
+    background: #ECF0F1;
+}
+
+#skillsPage>section:nth-child(1){
+    position: absolute;
+    width: 125px;
+    height: 70px;
+    top: 50px;
+    left: 45%;
+}
+
+#skillsPage>section:nth-child(1)>h3{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF3366;
+
+}
+#skillsPage>section:nth-child(1)>h1{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 40px;
+    color: #2c3e50;
+    bottom: -5px;
+}
+
+#skillsPage>section:nth-child(2){
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#skillsPage>section:nth-child(2)>div{
+    background: #2c3e50;
+}

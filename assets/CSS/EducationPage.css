@@ -33,3 +33,48 @@
     bottom: -5px;
 }
 
+#educationPage>section:nth-child(2)>div:nth-child(1){
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    width: 30px;
+    height: 230px;
+    border: 1px solid red;
+    top: 190px;
+    left: 600px;
+}
+
+#educationPage>section:nth-child(2)>div:nth-child(1)>div{
+    background: #FF3366;
+    width: 13px;
+    height: 13px;
+    border-radius: 110px;
+}
+
+#educationPage>section:nth-child(2)>div:nth-child(1)>div>div{
+    background: #FF3366;
+    width: 5px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-top: 11px;
+}
+
+#educationPage>section:nth-child(2)>div:nth-child(2){
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+    border: 1px solid red;
+    top: 190px;
+    left: 650px;
+}
+
+
+
+
+
