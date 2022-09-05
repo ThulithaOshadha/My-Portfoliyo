@@ -34,7 +34,6 @@
 
 #contactMePage>section:nth-child(2){
     position: relative;
-    border: 1px solid red;
     width: 1020px;
     height: 390px;
     top: 130px;
@@ -110,7 +109,7 @@
     justify-content: space-between;
     align-items: center;
     width: 70px;
-    height: 300px;
+    height: 240px;
     top: 40px;
     right: 240px;
 }
@@ -128,4 +127,43 @@
 }
 #contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3){
     background-image: url("../images/web/location new png.png");
+}
+
+#contactMePage>section:nth-child(2)>div>h1{
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 20px;
+    color: #ECF0F1;
+    margin: 0;
+}
+#contactMePage>section:nth-child(2)>div>h3,#contactMePage>section:nth-child(2)>div>address>h3{
+    font-family: "Open Sans Semibold";
+    font-size: 14px;
+    color: #ECF0F1;
+    margin-top: 8px;
+}
+
+#contactMePage>section:nth-child(2)>div:nth-child(3){
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 40px;
+    right: 70px;
+}
+#contactMePage>section:nth-child(2)>div:nth-child(4){
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 141px;
+    right: 70px;
+}
+#contactMePage>section:nth-child(2)>div:nth-child(5){
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 241px;
+    right: 70px;
+}
+#contactMePage>section:nth-child(2)>div>address>h3{
+    margin-bottom: 0px;
 }
