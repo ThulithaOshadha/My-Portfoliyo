@@ -7,7 +7,7 @@
 }
 
 #contactMePage>section:nth-child(1){
-    position: absolute;
+    position: relative;
     width: 250px;
     height: 70px;
     top: 50px;
@@ -30,4 +30,40 @@
     font-size: 40px;
     color: #ECF0F1;
     bottom: -5px;
+}
+
+#contactMePage>section:nth-child(2){
+    position: relative;
+    border: 1px solid red;
+    width: 950px;
+    height: 390px;
+    top: 130px;
+    left: 220px;
+}
+
+#contactMePage>section:nth-child(2)>form{
+    background: #34495E;
+    border-radius: 30px;
+    width: 800px;
+    height: 100%;
+}
+#contactMePage>section:nth-child(2)>form>fieldset{
+    border: 0px;
+}
+#contactMePage>section:nth-child(2)>form>fieldset>input{
+
+}
+#contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(1){
+    position: relative;
+    width: 250px;
+    height: 28px;
+    top: 30px;
+    left: 20px
+}
+#contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(2){
+    position: absolute;
+    width: 250px;
+    height: 28px;
+    top: 30px;
+    left: 300px
 }
