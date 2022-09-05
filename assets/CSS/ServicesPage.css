@@ -37,7 +37,6 @@
     position: absolute;
     width: 60%;
     height: 400px;
-    border: 1px solid red;
     top: 0;
     right: 0;
     bottom: 0;
@@ -53,8 +52,8 @@
 #servicesPage>section:nth-child(2)>div {
     background: #34495E;
     width: 260px;
-    height: 330px;
-    border-top-right-radius: 20px;
+    height: 270px;
+    border-top-right-radius: 30px;
     position: relative;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
@@ -67,7 +66,6 @@
     left: 0px;
     right: 0px;
     margin: auto;
-    border: 1px solid red;
 }
 
 #servicesPage>section:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
@@ -98,9 +96,8 @@
 
 #servicesPage>section:nth-child(2)>div>article{
     position: relative;
-    border: 1px solid red;
     width: 200px;
-    height: 150px;
+    height: 90px;
     top: 0;
     right: 0;
     bottom: 0;
