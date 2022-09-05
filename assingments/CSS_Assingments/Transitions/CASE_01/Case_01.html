@@ -5,6 +5,63 @@
     <title>Transition_Assignment-01</title>
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=3 minimum-scale=1 user-scalable=no">
     <link rel="stylesheet" href="../../../../assets/CSS/normalize.css">
+    <link rel="stylesheet" href="../../../../assets/Fonts/css/all.min.css">
+
+    <style>
+
+        section {
+            width: 230px;
+            height: 500px;
+            position: relative;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            right: 175px;
+        }
+
+        section > div {
+            left: 0;
+            position: relative;
+            height: 50px;
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0.25);;
+            background-color: #8715b4;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        section > div > h3 {
+            padding-left: 10px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+            margin: auto;
+            height: max-content;
+        }
+
+        section > div > i {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+            margin: auto;
+            font-size: 25px;
+        }
+
+        section>div:hover{
+            background-color: #2c3e50;
+            left: 175px;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+    </style>
 
 </head>
 <body>
@@ -12,7 +69,8 @@
 <section>
     <div>
         <h3>Menu One</h3>
-        <i class="fa-solid fa-address-book"></i>
+        <i class="fa fa-home" aria-hidden="true"></i>
+
     </div>
 
     <div>
