@@ -6,6 +6,75 @@
      <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=3 minimum-scale=1 user-scalable=no">
      <link rel="stylesheet" href="../../../assets/CSS/normalize.css">
      <link rel="stylesheet" href="../../../assets/Fonts/css/all.min.css">
+
+    <style>
+
+        ::-webkit-scrollbar{
+            width: 0;
+        }
+
+        div{
+            background: blue;
+            width: 200px;
+            height: 100px;
+            border-radius: 25px;
+            position: absolute;
+
+            animation-name: my-animation;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-duration: 4s;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                background: blue;
+                /*margin: 0 0 0 0;*/
+
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background: orange;
+                /*margin: 0 0 0 400px;*/
+
+                top: 0;
+                left: 1000px;
+                transform: rotate(180deg);
+            }
+
+            50% {
+                background: green;
+                /*margin: 400px 0 0 400px;*/
+
+                top: 500px;
+                left: 1000px;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                background: deeppink;
+                /*margin: 400px 0 0 0;*/
+
+                top: 500px;
+                left: 0;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                background: yellow;
+                /*margin: 0 0 0 0;*/
+
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
 </head>
 <body>
 
