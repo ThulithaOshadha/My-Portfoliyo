@@ -32,3 +32,81 @@
     color: #ECF0F1;
     bottom: -5px;
 }
+
+#servicesPage>section:nth-child(2){
+    position: absolute;
+    width: 60%;
+    height: 400px;
+    border: 1px solid red;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+#servicesPage>section:nth-child(2)>div{
+    background: #34495E;
+    width: 260px;
+    height: 330px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+#servicesPage>section:nth-child(2)>div>div{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+#servicesPage>section:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+    background-image: url("../images/web/web png.png");
+    background-size: cover;
+    background-position: center;
+}
+#servicesPage>section:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    background-image: url("../images/web/software png.png");
+    background-size: cover;
+    background-position: center;
+}
+#servicesPage>section:nth-child(2)>div:nth-child(3)>div:nth-child(1) {
+    background-image: url("../images/web/ui png.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#servicesPage>section:nth-child(2)>div>h4{
+    position: relative;
+    color: #D5D5D5;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    margin-top: 40px;
+    left: 40px;
+}
+
+#servicesPage>section:nth-child(2)>div>article>pre{
+    position: relative;
+    font-family: "Open Sans Semibold";
+    font-size: 14px;
+    color: #D5D5D5;
+    top: 0px;
+    left:-40px;
+}
+
+/*#servicesPage>#2ndPre{
+    left:40px;
+}*/
+
+
+
