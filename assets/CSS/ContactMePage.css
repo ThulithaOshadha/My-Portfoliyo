@@ -1,0 +1,33 @@
+#contactMePage{
+    position: absolute;
+    top: 3800px;
+    width: 100%;
+    height: 650px;
+    background: #2c3e50;
+}
+
+#contactMePage>section:nth-child(1){
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    top: 50px;
+    left: 45%;
+}
+
+#contactMePage>section:nth-child(1)>h3{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF3366;
+}
+#contactMePage>section:nth-child(1)>h1{
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 40px;
+    color: #ECF0F1;
+    bottom: -5px;
+}
