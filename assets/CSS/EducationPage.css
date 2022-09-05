@@ -42,7 +42,7 @@
     width: 30px;
     height: 230px;
     top: 190px;
-    left: 600px;
+    left: 630px;
 }
 
 #educationPage>section:nth-child(2)>div:nth-child(1)>div{
@@ -64,22 +64,21 @@
     position: absolute;
     width: 220px;
     height: 80px;
-    border: 1px solid red;
 }
 #educationPage>section:nth-child(2)>div:nth-child(2){
     position: absolute;
     top: 190px;
-    left: 645px;
+    left: 685px;
 }
 #educationPage>section:nth-child(2)>div:nth-child(3){
     position: absolute;
     top: 296px;
-    left: 645px;
+    left: 685px;
 }
 #educationPage>section:nth-child(2)>div:nth-child(4){
     position: absolute;
     top: 405px;
-    left: 645px;
+    left: 685px;
 }
 #educationPage>section:nth-child(2)>div:nth-child(2)>h2,#educationPage>section:nth-child(2)>div:nth-child(3)>h2,#educationPage>section:nth-child(2)>div:nth-child(4)>h2{
     font-family: "Open Sans";
@@ -92,12 +91,13 @@
     font-family: "Open Sans Semibold";
     font-size: 16px;
     color: #ECF0F1;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 #educationPage>section:nth-child(2)>div:nth-child(2)>h4,#educationPage>section:nth-child(2)>div:nth-child(3)>h4,#educationPage>section:nth-child(2)>div:nth-child(4)>h4{
     font-family: "Open Sans";
     font-size: 14px;
+    font-weight: 300;
     color: #ECF0F1;
     margin: 0;
 }
