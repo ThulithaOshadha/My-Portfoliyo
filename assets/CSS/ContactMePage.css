@@ -103,4 +103,29 @@
     font-weight: 500;
     color: #ECF0F1;
 }
-
+#contactMePage>section:nth-child(2)>aside:nth-child(2){
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    height: 300px;
+    top: 40px;
+    right: 240px;
+}
+#contactMePage>section:nth-child(2)>aside:nth-child(2)>div{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+}
+#contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(1){
+    background-image: url("../images/web/call new png.png");
+}
+#contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2){
+    background-image: url("../images/web/email png.png");
+}
+#contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3){
+    background-image: url("../images/web/location new png.png");
+}
