@@ -7,7 +7,60 @@
   <link rel="stylesheet" href="../../../../assets/CSS/normalize.css">
   <link rel="stylesheet" href="../../../../assets/Fonts/css/all.min.css">
 
-  
+  <style>
+
+    body{
+      background: dodgerblue;
+    }
+
+    body>div{
+      background: gray;
+      width: 350px;
+      height: 350px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+
+    body>div>h2{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: max-content;
+      height: max-content;
+      font-size: 28px;
+      color: white;
+    }
+
+    div::before{
+      content: '';
+      border: 25px solid white;
+      border-top: 25px solid crimson;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+
+    div:hover::before{
+      transform: rotate(360deg);
+      transition-property: all;
+      transition-duration: 2s;
+    }
+
+
+  </style>
 
 </head>
 <body>
