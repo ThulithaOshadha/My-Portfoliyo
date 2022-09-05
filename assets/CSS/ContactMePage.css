@@ -35,7 +35,7 @@
 #contactMePage>section:nth-child(2){
     position: relative;
     border: 1px solid red;
-    width: 950px;
+    width: 1020px;
     height: 390px;
     top: 130px;
     left: 220px;
@@ -44,15 +44,22 @@
 #contactMePage>section:nth-child(2)>form{
     background: #34495E;
     border-radius: 30px;
-    width: 800px;
+    width: 100%;
     height: 100%;
 }
 #contactMePage>section:nth-child(2)>form>fieldset{
     border: 0px;
 }
 #contactMePage>section:nth-child(2)>form>fieldset>input{
-
+    border-radius: 10px;
 }
+#contactMePage>section:nth-child(2)>form>fieldset>input::placeholder{
+    position: relative;
+    font-family: "Open Sans Semibold";
+    font-size: 16px;
+    left: 10px;
+}
+
 #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(1){
     position: relative;
     width: 250px;
@@ -62,8 +69,38 @@
 }
 #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(2){
     position: absolute;
-    width: 250px;
+    width: 280px;
     height: 28px;
-    top: 30px;
-    left: 300px
+    top: 35px;
+    left: 375px;
 }
+#contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(3){
+    position: absolute;
+    width: 620px;
+    height: 28px;
+    top: 100px;
+    left: 34px;
+}
+#contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(4){
+    position: absolute;
+    width: 620px;
+    height: 150px;
+    top: 165px;
+    left: 34px;
+}
+
+#contactMePage>section:nth-child(2)>form>fieldset>button{
+    position: absolute;
+    background: #FF3366;
+    bottom: 15px;
+    left: 35px;
+    border-color: #FF3366;
+    width: 135px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    color: #ECF0F1;
+}
+
