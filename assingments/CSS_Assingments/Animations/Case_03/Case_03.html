@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Animation_case_03</title>
+
+  <style>
+    section{
+      width: 900px;
+      height: 480px;
+      position: absolute;
+      border: 1px solid red;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    section>div{
+        width: 400%;
+        height: 100%;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+    section>div>div{
+        border: 1px solid #00ff2a;
+        height: 100%;
+        width: 100%;
+    }
+    section>div>div:nth-child(1){
+        background: url("../../../../assets/images/Animation_case_03_images/01.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section>div>div:nth-child(2){
+        background: url("../../../../assets/images/Animation_case_03_images/02.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section>div>div:nth-child(3){
+        background: url("../../../../assets/images/Animation_case_03_images/03.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section>div>div:nth-child(4){
+        background: url("../../../../assets/images/Animation_case_03_images/04.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+  </style>
 </head>
 <body>
-$END$
+
+<section>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
 </body>
 </html>
