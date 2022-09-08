@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation_Case_02</title>
+
+  <style>
+    div{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      margin: auto;
+      border:5px solid #2c3e50;
+      animation-name: my-animation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes my-animation {
+      0%{
+        width: 20px;
+        height: 20px;
+      }
+      100%{
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+      }
+    }
+  </style>
+
 </head>
 <body>
+
+<div></div>
 
 </body>
 </html>
