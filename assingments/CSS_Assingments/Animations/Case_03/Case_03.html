@@ -6,22 +6,24 @@
 
   <style>
     section{
-      width: 900px;
-      height: 480px;
+        width: 1530px;
+        height: 760px;
       position: absolute;
-      border: 1px solid red;
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
       margin: auto;
+        overflow: hidden;
     }
     section>div{
         width: 400%;
         height: 100%;
-        border: 1px solid red;
         display: flex;
-        justify-content: space-between;
+        animation-name: my-animation;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
     }
     section>div>div{
         border: 1px solid #00ff2a;
@@ -47,6 +49,22 @@
         background: url("../../../../assets/images/Animation_case_03_images/04.jpg");
         background-position: center;
         background-size: cover;
+    }
+    @keyframes my-animation {
+        0%,20%{
+            transform: translate(0%);
+        }
+        33%,53%{
+            transform: translate(-25%);
+        }
+        66%,85%{
+            transform: translate(-50%);
+        }
+        100%{
+            transform: translate(-75%);
+        }
+
+
     }
 
   </style>
