@@ -83,5 +83,90 @@ main>#HomePage>aside:nth-child(2)>nav>button{
 }
 
 
+/* Responsive mobile(small) size */
 
+@media all and (max-width: 320px){
+    main>#HomePage{
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        height: 190px;
+
+    }
+
+    main>#HomePage>img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center ;
+        background-size: cover;
+    }
+
+    main>#HomePage>section>h2{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Extrabold";
+        color: #2c3e50;
+        font-size: 23px;
+        margin: 0;
+        top: 26%;
+        left: 11%;
+    }
+
+    main>#HomePage>section>h1{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Semibold";
+        color: #2c3e50;
+        font-size: 15px;
+        margin: 0;
+        top: 43%;
+        left: 11%;
+    }
+
+    main>#HomePage>section>h4{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Semibold";
+        color: black;
+        font-size: 10px;
+        margin: 0;
+        top: 53%;
+        left: 11%;
+    }
+
+    main>#HomePage>aside:nth-child(4){
+        align-content: space-evenly;
+        position: absolute;
+        top: 28%;
+        left: 0%;
+        width: 11%;
+        height: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    main>#HomePage>aside:nth-child(4)>img{
+        width: 82%;
+        height: 16%;
+        margin: 0px;
+    }
+
+    main>#HomePage>aside:nth-child(2)>nav>button{
+        position: absolute;
+        background: #FF3366;
+        width: 16%;
+        height: 7%;
+        top: 67%;
+        left: 11%;
+        border-radius: 10px;
+        border: 0px;
+        color: #D5D5D5;
+        font-family: "Open Sans Semibold";
+        font-size: 7px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
 
