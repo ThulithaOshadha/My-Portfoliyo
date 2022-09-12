@@ -267,8 +267,8 @@
         position: absolute;
         width: 125px;
         height: 65px;
-        top: 30px;
-        left: 45%;
+        top: 28px;
+        left: 40%;
     }
 
     #aboutPage>section:nth-child(1)>h1{
@@ -276,7 +276,7 @@
         margin: 0;
         font-family: "Open Sans";
         font-weight: bold;
-        font-size: 20px;
+        font-size: 12px;
         color: #FF3366;
 
     }
@@ -285,8 +285,72 @@
         margin: 0;
         font-family: "Open Sans";
         font-weight: bold;
-        font-size: 40px;
+        font-size: 28px;
         color: #2c3e50;
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(1)>div{
+        position: absolute;
+        background-image: url("../images/web/about image.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 70%;
+        height: 270px;
+        top: 100px;
+        left: 49px;
+        border-radius: 20px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2){
+        position: absolute;
+        top: 400px;
+        left: 6%;
+        width: 89%;
+        height: 36%;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p{
+        position: relative;
+        top: 0;
+        left: 0px;
+        margin: 0;
+        width: 100%;
+        font-family: "Open Sans";
+        font-size: 14px;
+        height: 50px;
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>button{
+        position: absolute;
+        background: #FF3366;
+        width: 89px;
+        height: 24px;
+        top: 100px;
+        left: 0px;
+        border-radius: 10px;
+        border: 0px;
+        color: #D5D5D5;
+        font-family: "Open Sans Semibold";
+        font-size: 12px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(3){
+        width: 30px;
+        height: 133px;
+        position: relative;
+        top: 185px;
+        left: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div{
+        width: 29px;
+        height: 25px;
+
     }
 }
 
