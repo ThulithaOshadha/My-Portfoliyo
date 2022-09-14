@@ -305,7 +305,7 @@
         top: 400px;
         left: 6%;
         width: 89%;
-        height: 36%;
+        height: 45%;
     }
 
     #aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p{
@@ -334,11 +334,11 @@
     }
 
     #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(3){
-        width: 30px;
-        height: 133px;
+        width: 24px;
+        height: 110px;
         position: relative;
-        top: 185px;
-        left: 45px;
+        top: 90px;
+        left: 8px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -348,9 +348,161 @@
     }
 
     #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div{
-        width: 29px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
 
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(1){
+        background-image: url("../images/web/png name.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(2){
+        background-image: url("../images/web/phone png.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(3){
+        background-image: url("../images/web/email png.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(4){
+        width: 73px;
+        height: 107px;
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(4)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(5){
+        width: 340px;
+        height: 105px;
+        position: absolute;
+        top: 140px;
+        left: 103px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(5)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: 450;
+        font-size: 14px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(6){
+        width: 5px;
+        height: 105px;
+        position: absolute;
+        top: 140px;
+        left: 92px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(6)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-size: 14px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>h2{
+        margin: 0;
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 17px;
+        color: #2c3e50;
+        bottom: 24px;
+        left: 3px;
+    }
+
+    #myInterests{
+        /*border: 1px solid red;*/
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 67vw;
+        height: 21px;
+        bottom: 2px;
+        left: 4px;
+    }
+
+    #myInterests>div{
+        width: 25px;
+        height: 85%;
+    }
+
+    #myInterests>div:nth-child(1){
+        background-image: url("../images/web/music png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #myInterests>div:nth-child(2){
+        background-image: url("../images/web/travel png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #myInterests>div:nth-child(3){
+        background-image: url("../images/web/movie png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #interestLogo{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 270px;
+        height: 15px;
+        bottom: 7px;
+        left: 30px;
+    }
+
+    #interestLogo>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #interestLogo>h3:nth-child(3){
+        padding-right: 10px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p>a{
+        color: #FF3366;
+        text-decoration: none;
     }
 }
 
