@@ -139,6 +139,76 @@
         color: #ECF0F1;
         bottom: -5px;
     }
+
+    #educationPage>section:nth-child(2)>div:nth-child(1){
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between ;
+        width: 30px;
+        height: 230px;
+        top: 190px;
+        left: 630px;
+    }
+
+    #educationPage>section:nth-child(2)>div:nth-child(1)>div{
+        background: #FF3366;
+        width: 13px;
+        height: 13px;
+        border-radius: 110px;
+    }
+
+    #educationPage>section:nth-child(2)>div:nth-child(1)>div>div{
+        background: #FF3366;
+        width: 5px;
+        height: 60px;
+        margin-left: 4px;
+        margin-top: 11px;
+    }
+
+    #educationPage>section:nth-child(2)>div:nth-child(2),#educationPage>section:nth-child(2)>div:nth-child(3),#educationPage>section:nth-child(2)>div:nth-child(4){
+        position: absolute;
+        width: 220px;
+        height: 80px;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(2){
+        position: absolute;
+        top: 190px;
+        left: 685px;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(3){
+        position: absolute;
+        top: 296px;
+        left: 685px;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(4){
+        position: absolute;
+        top: 405px;
+        left: 685px;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(2)>h2,#educationPage>section:nth-child(2)>div:nth-child(3)>h2,#educationPage>section:nth-child(2)>div:nth-child(4)>h2{
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 20px;
+        color: #ECF0F1;
+        margin: 0;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(2)>h3,#educationPage>section:nth-child(2)>div:nth-child(3)>h3,#educationPage>section:nth-child(2)>div:nth-child(4)>h3{
+        font-family: "Open Sans Semibold";
+        font-size: 16px;
+        color: #ECF0F1;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    #educationPage>section:nth-child(2)>div:nth-child(2)>h4,#educationPage>section:nth-child(2)>div:nth-child(3)>h4,#educationPage>section:nth-child(2)>div:nth-child(4)>h4{
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 300;
+        color: #ECF0F1;
+        margin: 0;
+    }
+
 }
 
 
