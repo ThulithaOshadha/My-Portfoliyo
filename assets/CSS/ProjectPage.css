@@ -205,7 +205,9 @@
         font-size: 20px;
         color: #2c3e50;
         bottom: 35px;
-        left: 620px
+        left: 620px;
+        display: none;
+
     }
 
     #projectPage>section:nth-child(4)>p{
