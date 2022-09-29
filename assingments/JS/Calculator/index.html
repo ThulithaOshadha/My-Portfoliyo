@@ -3,8 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator_Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/calStylesheet.css">
 </head>
 <body>
+
+<section class="container-fluid" id="background">
+    <!--1st row -->
+    <section class="row" id="row1">
+        <div class="col">
+            <div class="col">
+                <h1 id="total">
+                    600
+                </h1>
+            </div>
+            <div class="col">
+                <h3 id="calculation">
+                    300 + 300
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!--2nd row -->
+    <section class="row" id="row2">
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" >AC</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">C</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">%</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">/</button>
+        </div>
+    </section>
+
+    <!--3rd row -->
+    <section class="row" id="row3">
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">7</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">8</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">9</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" id="btnMult">*</button>
+        </div>
+
+    </section>
+
+    <!--4th row -->
+    <section class="row" id="row4">
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">5</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">6</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" id="btnMin">-</button>
+        </div>
+    </section>
+
+    <!--5th row -->
+    <section class="row" id="row5">
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">1</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">2</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">3</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" id="btnPlus">+</button>
+        </div>
+    </section>
+    <!--6th row -->
+    <section class="row" id="row6">
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">0</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-primary">.</button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-primary" id="totaltBtn">=</button>
+        </div>
+    </section>
+</section>
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,63 @@
+#background{
+    width: 21%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #34495e;
+    border-radius: 15px;
+}
+
+#row1{
+    height: 130px;
+}
+
+#row1>div{
+    border: 1px solid deeppink;
+    height: 120px;
+}
+
+#row1>div>div {
+    border: 1px solid blue;
+    height: 55px;
+
+}
+body>section>section>div{
+    height: 70px;
+
+}
+body>section>section>div>button{
+    height: 55px;
+    width: 55px;
+    color:#D5D5D5!important;
+    background: #34495e!important;
+    border: #34495e!important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;!important;
+}
+#totaltBtn{
+    height: 55px;
+    width: 130px;
+}
+#total{
+    font-size: 35px;
+    color: #95a5a6;
+    margin: 0;
+    right: 0!important;
+}
+
+#calculation{
+    font-size: 20px;
+    color: #95a5a6;
+    width: max-content;
+    right: 0!important;
+}
+
+#row2>div>button{
+    color: #e67e22!important;
+}
+
+#totaltBtn,#btnMin,#btnMult,#btnPlus{
+    color: #e67e22!important;
+}
