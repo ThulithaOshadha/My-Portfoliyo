@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="col-3">
-                        <button type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
+                        <button id="addCusBtn" type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">+ Add Customer
                         </button>
 
@@ -132,7 +132,7 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" id="saveBtn" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,18 @@
     </section>
 </main>
 
+
+<script src="../../../../JS/SPA/assets/js/jquery-3.6.1.min.js "></script>
 <script src="../assets/js/bootstrap.min.js"></script>
+<script>
+    $('#saveBtn').click(function () {
+        $('#CId').val();
+        var name = "thulitha";
+
+        alert(name);
+    });
+</script>
+
 
 </body>
 </html>
