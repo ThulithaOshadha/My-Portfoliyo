@@ -14,43 +14,39 @@
     <section class="row" id="row1">
         <div class="col">
             <div class="col">
-                <h1 id="total">
-                    600
-                </h1>
+                <input class="form-control form-control-lg text-end" type="text" placeholder="0" aria-label=".form-control-lg example" id="totalPanel" disabled readonly>
             </div>
             <div class="col">
-                <h3 id="calculation">
-                    300 + 300
-                </h3>
+                <input class="form-control form-control-lg text-end" type="text" placeholder="0" aria-label=".form-control-lg example" id="calculationPanel" disabled readonly>
             </div>
         </div>
     </section>
     <!--2nd row -->
     <section class="row" id="row2">
         <div class="col-3">
-            <button type="button" class="btn btn-primary" >AC</button>
+            <button type="button" class="btn btn-primary" id="btnAc" >AC</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">C</button>
+            <button type="button" class="btn btn-primary" id="btnC">C</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">%</button>
+            <button type="button" class="btn btn-primary" id="btnPcnt">%</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">/</button>
+            <button type="button" class="btn btn-primary" id="btnDiv">/</button>
         </div>
     </section>
 
     <!--3rd row -->
     <section class="row" id="row3">
         <div class="col-3">
-            <button type="button" class="btn btn-primary">7</button>
+            <button type="button" class="btn btn-primary" id="btn7">7</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">8</button>
+            <button type="button" class="btn btn-primary" id="btn8">8</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">9</button>
+            <button type="button" class="btn btn-primary" id="btn9">9</button>
         </div>
         <div class="col-3">
             <button type="button" class="btn btn-primary" id="btnMult">*</button>
@@ -61,13 +57,13 @@
     <!--4th row -->
     <section class="row" id="row4">
         <div class="col-3">
-            <button type="button" class="btn btn-primary">4</button>
+            <button type="button" class="btn btn-primary" id="btn4">4</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">5</button>
+            <button type="button" class="btn btn-primary" id="btn5">5</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">6</button>
+            <button type="button" class="btn btn-primary" id="btn6">6</button>
         </div>
         <div class="col-3">
             <button type="button" class="btn btn-primary" id="btnMin">-</button>
@@ -77,13 +73,13 @@
     <!--5th row -->
     <section class="row" id="row5">
         <div class="col-3">
-            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary" id="btn1">1</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary" id="btn2">2</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary" id="btn3">3</button>
         </div>
         <div class="col-3">
             <button type="button" class="btn btn-primary" id="btnPlus">+</button>
@@ -92,10 +88,10 @@
     <!--6th row -->
     <section class="row" id="row6">
         <div class="col-3">
-            <button type="button" class="btn btn-primary">0</button>
+            <button type="button" class="btn btn-primary" id="btn0">0</button>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-primary">.</button>
+            <button type="button" class="btn btn-primary" id="btnPoint">.</button>
         </div>
         <div class="col-6">
             <button type="button" class="btn btn-primary" id="totaltBtn">=</button>
@@ -107,5 +103,75 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
+<script>
+    let mainPanel = $('#totalPanel');
+    let calPanel = $('#calculationPanel')
+    let buttons = [$('#btnAc'),$('#btnC'),$('#btnPcnt'),$('#btnDiv'),$('#btn7'),$('#btn8'),$('#btn9'),$('#btnMult'),
+        $('#btn4'),$('#btn5'),$('#btn6'),$('#btnMin'),$('#btn1'),$('#btn2'),$('#btn3'),$('#btnPlus'),$('#btn0'),$('#btnPoint'),$('#totaltBtn')];
+
+    buttons.forEach(button => {
+        button.click(() => {
+            calPanel.val(calPanel.val() + button.text())
+        })
+    });
+
+    function calc(stream) {
+        // calculations method
+        try {
+            var num = stream.split(/\+|\-|\*|\//);
+            var signs = stream.split(/\d+/);
+            signs.shift();
+            signs.pop();
+        } catch (error) {
+            alert("invalid expression! try again : " + error)
+        }
+        finally {
+            let total = signs.length;
+            let numCount = 0;
+            let signCount = 0;
+            let val = calcExtended(parseInt(num[numCount++]),signs[signCount++],parseInt(num[numCount++]));
+            while (signCount<total) {
+                val = calcExtended(val,signs[signCount++],parseInt(num[numCount++]));
+            }
+            //calPanel.val(val);
+            mainPanel.val(val);
+
+        }
+    }
+
+    function calcExtended(fnm,fnc,lnm) {
+        let finVal;
+        switch (fnc) {
+            case '+':
+                finVal = fnm + lnm;
+                break;
+            case '*':
+                finVal = fnm * lnm;
+                break;
+            case '-':
+                finVal = fnm - lnm;
+                break;
+            case '/':
+                finVal = fnm / lnm;
+                break;
+        }
+        return finVal;
+    }
+
+    $('#btnAc').click(() => {
+        $('#totalPanel').val('');
+        $('#calculationPanel').val('');
+    } )
+
+    $('#btnC').click(() => {
+        $('#totalPanel').val('');
+        $('#calculationPanel').val('');
+    } )
+
+    $('#totaltBtn').click(() => {
+        calc(calPanel.val());
+    } )
+
+</script>
 </body>
 </html>

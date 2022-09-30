@@ -15,12 +15,10 @@
 }
 
 #row1>div{
-    border: 1px solid deeppink;
     height: 120px;
 }
 
 #row1>div>div {
-    border: 1px solid blue;
     height: 55px;
 
 }
@@ -40,18 +38,17 @@ body>section>section>div>button{
     height: 55px;
     width: 130px;
 }
-#total{
+#totalPanel{
     font-size: 35px;
     color: #95a5a6;
     margin: 0;
     right: 0!important;
 }
 
-#calculation{
+#calculationPanel{
     font-size: 20px;
     color: #95a5a6;
-    width: max-content;
-    right: 0!important;
+    right: 0;
 }
 
 #row2>div>button{
