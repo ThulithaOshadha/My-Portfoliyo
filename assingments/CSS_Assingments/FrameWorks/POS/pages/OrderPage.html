@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/POSStyle.css">
+</head>
+<body id="orderPage">
+<!--Header-->
+<header>
+  <ul class="nav justify-content-end shadow p-1 mb-3 bg-e74c3c">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item bg">
+      <a class="nav-link" href="itemPage.html">Item</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="customerPage.html">Customer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="OrderPage.html">Order</a>
+    </li>
+  </ul>
+</header>
+<section class="container-fluid row" id="orderPg">
+    <section class="col-12 mb-4 row">
+        <div class="row">
+            <div
+                    class="p-1 px-3 col rounded-0 fw-bolder text-light fs-3 mt-4 shadow-sm"><i
+                    class="fa-solid fa-burger me-2"></i>
+                Manage Orders
+            </div>
+        </div>
+
+    </section>
+
+    <section class="row">
+
+        <section class="col-3" id="invoiceDetails">
+
+            <!--Invoice Details-->
+
+            <section class="col-12 mb-4 row">
+                <div class="row">
+                    <div id="invoiceDetFormTitle"
+                         class="p-1 px-3 col-12 col rounded-0 fw-semibold text-light fs-3 mt-4 shadow-sm"><i
+                            class="fa-solid fa-burger me-2" ></i>
+                        Invoice Details
+                    </div>
+                </div>
+
+            </section>
+
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="inputOrderID" class="form-label">Order ID :</label>
+                    <input type="text" class="form-control" id="inputOrderID" placeholder="D-001">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDate" class="form-label">Date :</label>
+                    <input type="text" class="form-control" id="inputDate" placeholder="10/10/2020">
+                </div>
+                <div class="col-md-5">
+                    <label for="inputCusID" class="form-label">Customer ID :</label>
+                    <select id="inputCusID" class="form-select" >
+                        <option selected>Select ID</option>
+                        <option>C-001</option>
+                        <option>C-002</option>
+                        <option>C-003</option>
+
+                    </select>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="inputCusSalary" class="form-label">Salary :</label>
+                    <input type="number" class="form-control" id="inputCusSalary" placeholder="70 000.00">
+                </div>
+                <div class="col-md-10">
+                    <label for="inputCusName" class="form-label">Customer Name :</label>
+                    <input type="text" class="form-control" id="inputCusName" placeholder="Amal Perera">
+                </div>
+
+                <div class="col-10">
+                    <label for="inputAddress" class="form-label">Address :</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+
+            </form>
+        </section>
+        <section class="col-3" id="itemSelect">
+            <!--Item Select-->
+            <section class="col-12 mb-4 row">
+                <div class="row">
+                    <div id="itemSelectFormTitle"
+                         class="p-1 px-3 col-12 col rounded-0 fw-semibold text-light fs-3 mt-4 shadow-sm"><i
+                            class="fa-solid fa-burger me-2" ></i>
+                        Item Select
+                    </div>
+                </div>
+
+
+                <!--Item Select Form-->
+                <form class="row g-3">
+
+                    <div class="col-md-5">
+                        <label for="inputItemID" class="form-label">Item Code :</label>
+                        <select id="inputItemID" class="form-select" >
+                            <option selected>Select ID</option>
+                            <option>I-001</option>
+                            <option>I-002</option>
+                            <option>I-003</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-md-7">
+                        <label for="inputItemName" class="form-label">Item Nmae :</label>
+                        <input type="text" class="form-control" id="inputItemName" placeholder="Milo">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="inputPrice" class="form-label">Price :</label>
+                        <input type="number" class="form-control" id="inputPrice" placeholder="100.00">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputQty" class="form-label">QTY :</label>
+                        <input type="number" class="form-control" id="inputQty" placeholder="150">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="inputOrderQty" class="form-label">Order QTY :</label>
+                        <input type="number" class="form-control" id="inputOrderQty" placeholder="5">
+                    </div>
+                    <div class="col-12 d-grid gap-2">
+                        <button type="submit" class="btn btn-success" id="btnAddCart">Add to Cart</button>
+                    </div>
+
+
+                </form>
+
+            </section>
+        </section>
+        <section class="col-3" id="receipt">
+            <!--Receipt Form-->
+            <section class="col-12 mb-4 row">
+                <div class="row">
+                    <div id="receiptFormTitle"
+                         class="p-1 px-3 col-12 col rounded-0 fw-semibold text-light fs-3 mt-4 shadow-sm"><i
+                            class="fa-solid fa-burger me-2" ></i>
+                        Receipt
+                    </div>
+                </div>
+
+
+
+                <h1 id="totalLabel">
+                    Total = 2700.00
+                </h1>
+                <h2 id="subTotalLabel">
+                    Sub Total = 2400.00
+                </h2>
+
+                <!--Receipt-->
+                <form class="row g-3">
+
+                    <div class="col-md-5">
+                        <label for="inputCash" class="form-label">Cash :</label>
+                        <input type="number" class="form-control" id="inputCash" placeholder="5000.00">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputDiscount" class="form-label">Discount :</label>
+                        <select id="inputDiscount" class="form-select" >
+                            <option selected>Discount</option>
+                            <option>5%</option>
+                            <option>10%</option>
+                            <option>12%</option>
+
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-4">
+                        <label for="inputBalance" class="form-label">Balance :</label>
+                        <input type="number" class="form-control" id="inputBalance" placeholder="100.00">
+                    </div>
+
+                    <div class="col-12 d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" id="btnPurchase">Purchase</button>
+                    </div>
+
+
+                </form>
+
+            </section>
+        </section>
+    </section>
+
+    <section class="col-10" id="orderTable">
+        <!--Order Table-->
+        <table class="table table-hover">
+            <thead class="text-white" style="background: #34495e">
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">QTY</th>
+                <th scope="col">total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">I-001</th>
+                <td>Milo</td>
+                <td>100.00</td>
+                <td>2</td>
+                <td>200.00</td>
+            </tr>
+            <tr>
+                <th scope="row">I-002</th>
+                <td>Sauce Bottle</td>
+                <td>420.00</td>
+                <td>1</td>
+                <td>420.00</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+</section>
+
+
+
+</body>
+</html>

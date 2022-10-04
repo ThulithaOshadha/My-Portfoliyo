@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/POSStyle.css">
+</head>
+<body id="itemPage">
+<!--Header-->
+<header>
+  <ul class="nav justify-content-end shadow p-1 mb-3 bg-e74c3c">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item bg">
+      <a class="nav-link" href="itemPage.html">Item</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Customer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="OrderPage.html">Order</a>
+    </li>
+  </ul>
+</header>
+
+
+<section class="container-fluid row" id="customerPG">
+  <section class="col-12 mb-4 row">
+    <div class="row">
+      <div
+              class="p-1 px-3 col rounded-0 fw-bolder text-light fs-3 mt-4 shadow-sm"><i
+              class="fa-solid fa-burger me-2"></i>
+        Manage Customer
+      </div>
+    </div>
+
+  </section>
+
+  <!--Drop Down-->
+  <section class="col-8">
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Customer ID
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Customer Name</a></li>
+      </ul>
+    </div>
+
+    <!--Search Bar-->
+    <div class="hstack gap-3">
+      <input class="form-control me-auto" type="text" placeholder="Enter your customer ID or name" aria-label="Add your item here...">
+      <button type="button" class="btn btn-success">Search</button>
+      <div class="vr"></div>
+      <button type="button" class="btn btn-outline-danger">Clear</button>
+    </div>
+
+    <!--Customer Table-->
+    <table class="table table-hover">
+      <thead class="text-white" style="background: #34495e">
+      <tr>
+        <th scope="col">Customer ID</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Salary</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">C-001</th>
+        <td>Thulitha</td>
+        <td>Galle</td>
+        <td>75000.00</td>
+      </tr>
+      <tr>
+        <th scope="row">C-002</th>
+        <td>Tharindu</td>
+        <td>Panadura</td>
+        <td>100000.00</td>
+      </tr>
+      <tr>
+        <th scope="row">C-003</th>
+        <td>Ashen</td>
+        <td>Matara</td>
+        <td>100000.00</td>
+      </tr>
+      </tbody>
+
+    </table>
+  </section>
+
+  <section class="col-2 " id="customerForm">
+
+    <section class="col-12 mb-4 row">
+      <div class="row">
+        <div id="customerFormTitle"
+             class="p-1 px-3 col-12 col rounded-0 fw-semibold text-light fs-3 mt-4 shadow-sm"><i
+                class="fa-solid fa-burger me-2" ></i>
+          Customer Form
+        </div>
+      </div>
+
+    </section>
+
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Customer ID</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="C-001">
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Item Name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Thulitha Oshadha">
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Item Code</label>
+      <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Galle">
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Item Name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="75000.00">
+    </div>
+
+    <section class="col-12">
+      <div class="row">
+        <div class="d-grid gap-2">
+          <button class="btn btn-success" type="button">Add Customer</button>
+          <button class="btn btn-warning" type="button">Update</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-grid gap-2" id="dGridGap2">
+          <button class="btn btn-danger" type="button">Delete</button>
+
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+
+
+</section>
+
+<script src="../assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
