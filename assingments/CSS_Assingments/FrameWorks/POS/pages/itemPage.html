@@ -59,7 +59,7 @@
         </div>
 
         <!--Item Table-->
-        <table class="table table-hover">
+        <table class="table table-hover" id="itemTable">
                 <thead class="text-white" style="background: #34495e">
                 <tr>
                     <th scope="col">Item Code</th>
@@ -92,7 +92,7 @@
         </table>
     </section>
 
-    <section class="col-2 " id="itemForm">
+    <section class="col-2" id="itemForm">
 
 
         <section class="col-12 mb-4 row">
@@ -108,26 +108,26 @@
         <!--<h1 id="itemFormTitle">Item Details Form</h1> -->
 
         <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Item Code</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="I-001">
+            <label for="txtItemCode" class="form-label">Item Code</label>
+            <input type="text" class="form-control" id="txtItemCode" placeholder="I-001">
         </div>
         <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Item Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Milo">
+            <label for="txtItemName" class="form-label">Item Name</label>
+            <input type="text" class="form-control" id="txtItemName" placeholder="Milo">
         </div>
         <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Item Code</label>
-            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="100.00">
+            <label for="txtItemPrice" class="form-label">Item Code</label>
+            <input type="text" class="form-control" id="txtItemPrice" placeholder="100.00">
         </div>
         <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Item Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="150">
+            <label for="txtItemQty" class="form-label">Item Name</label>
+            <input type="text" class="form-control" id="txtItemQty" placeholder="150">
         </div>
 
         <section class="col-12">
             <div class="row">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Add Item</button>
+                    <button class="btn btn-success" id="addItemBtn" type="button">Add Item</button>
                     <button class="btn btn-warning" type="button">Update</button>
                 </div>
             </div>
@@ -147,6 +147,42 @@
 </section>
 
 <script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+    var itemArray = [];
+
+    $('#addItemBtn').click(function (){
+        alert("jjjj");
+        console.log('hi');
+        let itemCode = $("txtItemCode").valueOf();
+        let itemName = $('txtItemName').valueOf();
+        let itemPrice = $('txtItemPrice').valueOf();
+        let itemQty = $('txtItemQty').valueOf();
+
+        var itemOB = {
+            id:itemCode,
+            name:itemName,
+            price:itemPrice,
+            qty:itemQty
+        }
+
+        itemArray.push(itemOB);
+        console.log(itemArray);
+
+        loadItemTable();
+    });
+
+    function loadItemTable() {
+        $('#itemTable').empty();
+
+        for (var item of itemArray){
+            var row = <tr><th scope="row">${item.id}</th><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>
+            $('#itemTable').append(row);
+        }
+
+    }
+</script>
 
 </body>
 </html>

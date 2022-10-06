@@ -1,0 +1,189 @@
+
+header{
+    background: #e74c3c!important;
+}
+.img-thumbnail{
+    height: 25px;
+    width: 25px;
+}
+.nav-link{
+    font-size: 18px;
+    font-family: "Open Sans Semibold";
+    color: white;
+
+}
+#itemCardImage,#customerCardImage,#orderCardImage{
+    height: 150px;
+    width: 250px;
+}
+#h1Tag{
+    color: #c0392b;
+    font-size: 45px;
+    margin-top: 40px;
+}
+#h3Tag{
+    color: #e74c3c;
+    font-size: 20px;
+    margin-bottom: 30px
+}
+#cartTextItem>p>h4{
+    font-size: 15px;
+}
+#customerCard{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: #0a53be;
+}
+
+#cartTextItem,#cart2TextItem,#cart3TextItem{
+    margin-left: 80px;
+}
+
+
+#itemPG>section>div>div{
+    background: #34495e;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans Semibold";
+    height: 50px;
+    margin-top: 10px;
+}
+.dropdown{
+    margin-top: 20px;
+}
+.hstack{
+    margin-bottom: 40px;
+}
+#itemForm{
+    margin-left: 100px;
+    border: 1px solid #0a53be;
+    border-radius: 15px;
+}
+#dGridGap2{
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+
+#customerPG>section>div>div{
+    background: #34495e;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans Semibold";
+    height: 50px;
+    margin-top: 10px;
+}
+.dropdown{
+    margin-top: 20px;
+}
+.hstack{
+    margin-bottom: 40px;
+}
+#customerForm{
+    margin-left: 100px;
+    border: 1px solid #0a53be;
+    border-radius: 15px;
+}
+#dGridGap2{
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+#itemFormTitle{
+    font-size: 18px!important;
+    font-family: "Open Sans Semibold", serif;
+    background: #34495e;
+    color: white;
+    width: 140px!important;
+    margin-top: 0!important;
+    margin-left: 50px!important;
+
+}
+#customerFormTitle{
+    font-size: 18px!important;
+    font-family: "Open Sans Semibold", serif;
+    background: #34495e;
+    color: white;
+    width: 200px!important;
+    margin-top: 0!important;
+    margin-left: 25px!important;
+}
+
+#invoiceDetails{
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+#orderPg>section>div>div{
+    background: #34495e;
+    color: white;
+    font-size: 25px;
+    font-family: "Open Sans Semibold";
+    height: 50px;
+    margin-top: 10px;
+}
+
+#invoiceDetFormTitle{
+    font-size: 18px!important;
+    font-family: "Open Sans Semibold", serif;
+    background: #34495e;
+    color: white;
+    width: 180px!important;
+    margin-top: 0!important;
+    margin-left: 78px!important;
+}
+#inputAddress{
+    margin-bottom: 20px;
+}
+
+#itemSelect{
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    margin-left: 40px;
+    height: 320px;
+}
+#itemSelectFormTitle{
+    font-size: 18px!important;
+    font-family: "Open Sans Semibold", serif;
+    background: #34495e;
+    color: white;
+    width: 142px!important;
+    margin-top: 0!important;
+    margin-left: 95px!important;
+}
+#btnAddCart{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#receiptFormTitle{
+    font-size: 18px!important;
+    font-family: "Open Sans Semibold", serif;
+    background: #34495e;
+    color: white;
+    width: 112px!important;
+    margin-top: 0!important;
+    margin-left: 85px!important;
+}
+#receipt{
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    margin-left: 40px;
+    height: 390px;
+}
+#totalLabel{
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #34495e;
+    margin-top: 20px;
+
+}
+#subTotalLabel{
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #5fa4e8;
+}
+#btnPurchase{
+    margin-left: 20px;
+}
+#orderTable{
+    margin-top: 30px;
+}
