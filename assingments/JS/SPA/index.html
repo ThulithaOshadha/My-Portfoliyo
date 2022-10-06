@@ -119,7 +119,7 @@
       </div>
 
       <!--Item Table-->
-      <table class="table table-hover" id="itemTable">
+      <table class="table table-hover" >
         <thead class="text-white" style="background: #34495e">
         <tr>
           <th scope="col">Item Code</th>
@@ -128,7 +128,7 @@
           <th scope="col">QTY</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="itemTable">
         <tr>
           <th scope="row">I-001</th>
           <td>Milo</td>
@@ -593,6 +593,7 @@
 
     itemArray.push(itemOB);
     loadItemTable();
+    bindRowClickEvents();
   });
 
   function loadItemTable(){
@@ -605,7 +606,24 @@
 
   }
 
+</script>
 
+<!--Tabel Selection-->
+<script>
+  function bindRowClickEvents(){
+    $("#itemTable>tr").click(function (){
+
+      let id = $(this).children(':eq(0)').text();
+      let name = $(this).children(':eq(1)').text();
+      let price = $(this).children(':eq(2)').text();
+      let qty = $(this).children(':eq(3)').text();
+
+      $("#txtItemCode").val(id);
+      $("#txtItemName").val(name);
+      $("#txtItemPrice").val(price);
+      $("#txtItemQty").val(qty);
+    });
+  }
 
 </script>
 
