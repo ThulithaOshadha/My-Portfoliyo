@@ -17,6 +17,7 @@ $("#addItemBtn").click(function (){
     itemArray.push(itemOB);
     loadItemTable();
     bindRowClickEvents();
+    loadCusId();
 });
 
 function loadItemTable(){

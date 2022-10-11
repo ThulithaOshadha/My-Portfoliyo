@@ -248,7 +248,7 @@
         <th scope="col">Salary</th>
       </tr>
       </thead>
-      <tbody>
+      <tbody id="tblCustomer">
       <tr>
         <th scope="row">C-001</th>
         <td>Thulitha</td>
@@ -286,32 +286,32 @@
     </section>
 
     <div class="mb-3">
-      <label for="formGroupExampleInputCus" class="form-label">Customer ID</label>
-      <input type="text" class="form-control" id="formGroupExampleInputCus" placeholder="C-001">
+      <label for="txtCustomerID" class="form-label">Customer ID</label>
+      <input type="text" class="form-control" id="txtCustomerID" placeholder="C-001">
     </div>
     <div class="mb-3">
-      <label for="formGroupExampleInput2Cus" class="form-label">Item Name</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2Cus" placeholder="Thulitha Oshadha">
+      <label for="txtCustomerName" class="form-label">Customer Name</label>
+      <input type="text" class="form-control" id="txtCustomerName" placeholder="Thulitha Oshadha">
     </div>
     <div class="mb-3">
-      <label for="formGroupExampleInput3Cus" class="form-label">Item Code</label>
-      <input type="text" class="form-control" id="formGroupExampleInput3Cus" placeholder="Galle">
+      <label for="txtCustomerAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="txtCustomerAddress" placeholder="Galle">
     </div>
     <div class="mb-3">
-      <label for="formGroupExampleInput4Cus" class="form-label">Item Name</label>
-      <input type="text" class="form-control" id="formGroupExampleInput4Cus" placeholder="75000.00">
+      <label for="txtCustomerSalary" class="form-label">Salar</label>
+      <input type="text" class="form-control" id="txtCustomerSalary" placeholder="75000.00">
     </div>
 
     <section class="col-12">
       <div class="row">
         <div class="d-grid gap-2">
-          <button class="btn btn-success" type="button">Add Customer</button>
-          <button class="btn btn-warning" type="button">Update</button>
+          <button class="btn btn-success" id="addCusBtn" type="button">Add Customer</button>
+          <button class="btn btn-warning" id="updateCusBtn" type="button">Update</button>
         </div>
       </div>
       <div class="row">
         <div class="d-grid gap-2" id="dGridGap2Cus">
-          <button class="btn btn-danger" type="button">Delete</button>
+          <button class="btn btn-danger" id="deleteCusBtn" type="button">Delete</button>
 
         </div>
       </div>
@@ -367,9 +367,7 @@
           <label for="inputCusID" class="form-label">Customer ID :</label>
           <select id="inputCusID" class="form-select" >
             <option selected>Select ID</option>
-            <option>C-001</option>
-            <option>C-002</option>
-            <option>C-003</option>
+
 
           </select>
         </div>
@@ -538,6 +536,8 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="controllers/dashBoardControllers.js"></script>
 <script src="controllers/itemPageControllers.js"></script>
+<script src="controllers/customerPageControllers.js"></script>
+<script src="controllers/orderPageControllers.js"></script>
 
 
 
