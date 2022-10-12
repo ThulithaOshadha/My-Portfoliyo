@@ -168,6 +168,196 @@
     margin-bottom: 0px;
 }
 
+/* Responsive mobile(medium) size */
+
+@media all and (min-width: 375px) and (max-width: 424px) {
+    #contactMePage{
+        position: absolute;
+        top: 4040px;
+        width: 100%;
+        height: 1170px;
+        background: #2c3e50;
+    }
+
+    #contactMePage>section:nth-child(1){
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        top: 50px;
+        left: 35%;
+    }
+
+    #contactMePage>section:nth-child(1)>h3{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 13px;
+        color: #FF3366;
+    }
+    #contactMePage>section:nth-child(1)>h1{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 29px;
+        color: #ECF0F1;
+        bottom: -5px;
+    }
+
+    #contactMePage>section:nth-child(2){
+        position: absolute;
+        width: 80%;
+        height: 963px;
+        top: 150px;
+        left: 35px;
+        margin: 0;
+    }
+
+    #contactMePage>section:nth-child(2)>form{
+        background: #34495E;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset{
+        border: 0px;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset>input{
+        border-radius: 10px;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset>input::placeholder{
+        position: relative;
+        font-family: "Open Sans Semibold";
+        font-size: 14px;
+        left: 10px;
+    }
+
+    #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(1){
+        position: relative;
+        width: 210px;
+        height: 25px;
+        top: 30px;
+        left: 25px;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(2){
+        position: absolute;
+        width: 200px;
+        height: 23px;
+        top: 95px;
+        left: 25px;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(3){
+        position: absolute;
+        width: 210px;
+        height: 23px;
+        top: 153px;
+        left: 25px;
+    }
+    #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(4){
+        position: absolute;
+        width: 210px;
+        height: 150px;
+        top: 213px;
+        left: 25px;
+    }
+
+    #contactMePage>section:nth-child(2)>form>fieldset>button{
+        position: absolute;
+        background: #FF3366;
+        bottom: 525px;
+        left: 70px;
+        border-color: #FF3366;
+        width: 135px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        color: #ECF0F1;
+    }
+    #contactMePage>section:nth-child(2)>aside:nth-child(2){
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 40px;
+        height: 300px;
+        top: 498px;
+        right: 130px;
+    }
+    #contactMePage>section:nth-child(2)>aside:nth-child(2)>div{
+        width: 48px;
+        height: 48px;
+        background-position: center;
+        background-size: cover;
+    }
+    #contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(1){
+        background-image: url("../images/web/call new png.png");
+    }
+    #contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2){
+        background-image: url("../images/web/email png.png");
+    }
+    #contactMePage>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3){
+        background-image: url("../images/web/location new png.png");
+    }
+
+    #contactMePage>section:nth-child(2)>div>h1{
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 17px;
+        color: #ECF0F1;
+        margin: 0;
+    }
+    #contactMePage>section:nth-child(2)>div>h3,#contactMePage>section:nth-child(2)>div>address>h3{
+        font-family: "Open Sans Semibold";
+        font-size: 13px;
+        color: #ECF0F1;
+        margin-top: 8px;
+    }
+
+    #contactMePage>section:nth-child(2)>div:nth-child(3){
+        position: absolute;
+        width: 160px;
+        height: 100px;
+        top: 557px;
+        right: 22px;
+    }
+    #contactMePage>section:nth-child(2)>div:nth-child(4){
+        position: absolute;
+        width: 160px;
+        height: 100px;
+        top: 674px;
+        right: 10px;
+    }
+    #contactMePage>section:nth-child(2)>div:nth-child(5){
+        position: absolute;
+        width: 160px;
+        height: 100px;
+        top: 810px;
+        right: 23px;
+    }
+
+    #contactMePage>section:nth-child(2)>div:nth-child(3)>h3{
+        position: absolute;
+        left: -15px;
+    }
+    #contactMePage>section:nth-child(2)>div:nth-child(4)>h3{
+        position: absolute;
+        left: -70px;
+    }
+
+    #contactMePage>section:nth-child(2)>div>address{
+        position: absolute;
+        left: 7px;
+    }
+
+    #contactMePage>section:nth-child(2)>div>address>h3{
+        margin-bottom: 0px;
+    }
+}
+
 /* Responsive mobile(small) size */
 
 @media all and (max-width: 320px){
