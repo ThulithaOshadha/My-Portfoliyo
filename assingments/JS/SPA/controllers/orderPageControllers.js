@@ -53,3 +53,51 @@ function loadItemDetails(){
     }
 }
 
+var orderItemArray = [];
+
+function loadOrderTable(){
+    $("#ordersTable").empty();
+
+    let t;
+    for (var item of orderItemArray){
+
+        var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td><td>${item.total}</td></tr>`;
+        $("#ordersTable").append(row);
+        //var t = calculateTotal(item.total);
+
+        var tot = t + item.total
+        t= tot;
+        console.log(tot);
+
+
+    }
+}
+
+$("#btnAddCart").click(function (){
+    let code = $("#inputItemID").val();
+    let name = $("#inputItemName").val();
+    let price = $("#inputPrice").val();
+    let qty = $("#inputOrderQty").val();
+    let total = price*qty;
+
+    var orderItemOB = {
+        id: code,
+        name: name,
+        price: price,
+        qty: qty,
+        total: total
+    }
+
+    orderItemArray.push(orderItemOB);
+    loadOrderTable();
+});
+
+function calculateTotal(price){
+    var tot ;
+    var total = tot + price;
+    tot = total;
+    return tot;
+
+
+}
+

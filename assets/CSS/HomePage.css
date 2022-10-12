@@ -82,6 +82,19 @@ main>#HomePage>aside:nth-child(2)>nav>button{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Responsive mobile(medium) size */
+@media all and (min-width: 320px) and (max-width: 375px) {
+
+    main>#HomePage{
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        height: 190px;
+
+    }
+}
+
+
 
 /* Responsive mobile(small) size */
 
