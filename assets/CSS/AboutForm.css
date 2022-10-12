@@ -252,6 +252,259 @@
     text-decoration: none;
 }
 
+/* Responsive Tablet size */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #aboutPage{
+        position: absolute;
+        top: 303px;
+        width: 100%;
+        height: 117%;
+        background: #ECF0F1
+    }
+
+    #aboutPage>section:nth-child(1){
+        position: absolute;
+        width: 125px;
+        height: 65px;
+        top: 28px;
+        left: 40%;
+    }
+
+    #aboutPage>section:nth-child(1)>h1{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 13px;
+        color: #FF3366;
+
+    }
+    #aboutPage>section:nth-child(1)>h2{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 29px;
+        color: #2c3e50;
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(1)>div{
+        position: absolute;
+        background-image: url("../images/web/about image.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 55%;
+        height: 270px;
+        top: 100px;
+        left: 92px;
+        border-radius: 20px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2){
+        position: absolute;
+        top: 400px;
+        left: 6%;
+        width: 89%;
+        height: 45%;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p{
+        position: relative;
+        top: 0;
+        left: 0px;
+        margin: 0;
+        width: 100%;
+        font-family: "Open Sans";
+        font-size: 16px;
+        height: 50px;
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>button{
+        position: absolute;
+        background: #FF3366;
+        width: 115px;
+        height: 27px;
+        top: 100px;
+        left: 0px;
+        border-radius: 10px;
+        border: 0px;
+        color: #D5D5D5;
+        font-family: "Open Sans Semibold";
+        font-size: 14px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(3){
+        width: 26px;
+        height: 114px;
+        position: relative;
+        top: 100px;
+        left: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div{
+        width: 24px;
+        height: 24px;
+
+    }
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(1){
+        background-image: url("../images/web/png name.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(2){
+        background-image: url("../images/web/phone png.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section>div:nth-child(3){
+        background-image: url("../images/web/email png.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(4){
+        width: 76px;
+        height: 107px;
+        position: absolute;
+        top: 153px;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(4)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(5){
+        width: 198px;
+        height: 105px;
+        position: absolute;
+        top: 155px;
+        left: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(5)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: 450;
+        font-size: 15px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(6){
+        width: 5px;
+        height: 105px;
+        position: absolute;
+        top: 154px;
+        left: 124px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>section:nth-child(6)>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-size: 15px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>h2{
+        margin: 0;
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 17px;
+        color: #2c3e50;
+        bottom: 44px;
+        left: 3px;
+    }
+
+    #myInterests{
+        /*border: 1px solid red;*/
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 67vw;
+        height: 21px;
+        bottom: 9px;
+        left: 4px;
+    }
+
+    #myInterests>div{
+        width: 25px;
+        height: 85%;
+    }
+
+    #myInterests>div:nth-child(1){
+        background-image: url("../images/web/music png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #myInterests>div:nth-child(2){
+        background-image: url("../images/web/travel png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #myInterests>div:nth-child(3){
+        background-image: url("../images/web/movie png.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #interestLogo{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 318px;
+        height: 15px;
+        bottom: 15px;
+        left: 48px;
+    }
+
+    #interestLogo>h3{
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #interestLogo>h3:nth-child(3){
+        padding-right: 10px;
+    }
+
+    #aboutPage>section:nth-child(2)>aside:nth-child(2)>article>p>a{
+        color: #FF3366;
+        text-decoration: none;
+    }
+}
+
 /* Responsive mobile(large) size */
 @media all and (min-width: 425px) and (max-width: 768px) {
     #aboutPage{
