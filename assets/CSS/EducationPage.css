@@ -102,7 +102,7 @@
     margin: 0;
 }
 
-/* Responsive mobile(small) size */
+/* Responsive mobile(medium) size */
 @media all and (min-width: 375px) and (max-width: 424px) {
     #educationPage{
         position: absolute;
