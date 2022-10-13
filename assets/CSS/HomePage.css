@@ -82,6 +82,93 @@ main>#HomePage>aside:nth-child(2)>nav>button{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Responsive Laptop(small) size */
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+    main>#HomePage{
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        height: 620px
+
+    }
+
+    main>#HomePage>img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center ;
+        background-size: cover;
+    }
+
+    main>#HomePage>section>h2{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Extrabold";
+        color:  #2c3e50;
+        font-size: 50px;
+        margin: 0;
+        top: 190px;
+        left: 130px;
+    }
+
+    main>#HomePage>section>h1{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Semibold";
+        color:  #2c3e50;
+        font-size: 40px;
+        margin: 0;
+        top: 270px;
+        left: 130px;
+    }
+
+    main>#HomePage>section>h4{
+        position: absolute;
+        font-weight: bold;
+        font-family: "Open Sans Semibold";
+        color:  black;
+        font-size: 22px;
+        margin: 0;
+        top: 325px;
+        left: 130px;
+    }
+
+    main>#HomePage>aside:nth-child(4){
+        align-content: space-evenly;
+        position: absolute;
+        top: 200px;
+        left: 1px;
+        width: 69px;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    main>#HomePage>aside:nth-child(4)>img{
+
+        width: 76px;
+        height: 45px;
+        margin: 0px;
+    }
+
+    main>#HomePage>aside:nth-child(2)>nav>button{
+        position: absolute;
+        background: #FF3366;
+        width: 142px;
+        height: 35px;
+        top: 380px;
+        left: 130px;
+        border-radius: 10px;
+        border: 0px;
+        color: #D5D5D5;
+        font-family: "Open Sans Semibold";
+        font-size: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
 /* Responsive Tablet size */
 @media all and (min-width: 768px) and (max-width: 1023px) {
     main>#HomePage{
