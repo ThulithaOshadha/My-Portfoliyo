@@ -135,7 +135,7 @@
         margin: 0;
         font-family: "Open Sans";
         font-weight: bold;
-        font-size: 20px;
+        font-size: 12px;
         color: #FF3366;
 
     }
@@ -144,7 +144,7 @@
         margin: 0;
         font-family: "Open Sans";
         font-weight: bold;
-        font-size: 40px;
+        font-size: 28px;
         color: #ECF0F1;
         bottom: -5px;
     }
@@ -168,8 +168,8 @@
 
     #Card01>div:nth-child(1),#Card02>div:nth-child(1),#Card03>div:nth-child(1){
         position: absolute;
-        width: 27%;
-        height: 234px;
+        width: 100%;
+        height: 130px;
     }
 
     #Card01>div:nth-child(1){
@@ -191,13 +191,13 @@
 
     #Card01>div:nth-child(2)>button,#Card02>div:nth-child(2)>button,#Card03>div:nth-child(2)>button{
         position: relative;
-        top: 285px;
-        left: 37px;
-        width: 200px;
-        height: 35px;
+        top: 139px;
+        left: 65px;
+        width: 136px;
+        height: 26px;
         background: #2c3e50;
         font-family: "Open Sans Semibold", serif;
-        font-size: 18px;
+        font-size: 13px;
         color: #ECF0F1;
         border: 0;
         border-radius: 10px;
@@ -207,9 +207,9 @@
 
     #Card01>div:nth-child(2)>h2,#Card02>div:nth-child(2)>h2,#Card03>div:nth-child(2)>h2{
         position: relative;
-        top: 232px;
-        left: 63px;
-        font-size: 20px;
+        top: 135px;
+        left: 70px;
+        font-size: 15px;
         color: #34495e;
         font-family: "Open Sans";
         font-weight: 650;
@@ -218,10 +218,10 @@
 
     #Card01>div:nth-child(2)>p,#Card02>div:nth-child(2)>p,#Card03>div:nth-child(2)>p{
         position: relative;
-        font-size: 15px;
+        font-size: 12px;
         color: #34495e;
         font-family: "Open Sans";
-        width: 286px;
+        width: 234px;
         height: 30px;
         margin: 0;
         top: 238px;
