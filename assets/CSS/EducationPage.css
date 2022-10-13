@@ -106,9 +106,9 @@
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #educationPage{
         position: absolute;
-        top: 1093px;
+        top: 1328px;
         width: 100%;
-        height: 500px;
+        height: 525px;
         background: #2c3e50;
     }
 
@@ -145,23 +145,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between ;
-        width: 40px;
-        height: 212px;
+        width: 45px;
+        height: 230px;
         top: 170px;
-        left: 110px;
+        left: 255px;
     }
 
     #educationPage>section:nth-child(2)>div:nth-child(1)>div{
         background: #FF3366;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         border-radius: 110px;
     }
 
     #educationPage>section:nth-child(2)>div:nth-child(1)>div>div{
         background: #FF3366;
-        width: 4px;
-        height: 50px;
+        width: 5px;
+        height: 52px;
         margin-left: 3px;
         margin-top: 9px;
     }
@@ -174,18 +174,18 @@
     #educationPage>section:nth-child(2)>div:nth-child(2){
         position: absolute;
         top: 168px;
-        left: 155px;
+        left: 312px;
     }
     #educationPage>section:nth-child(2)>div:nth-child(3){
         position: absolute;
-        top: 270px;
-        left: 155px;
-        width: 155px;
+        top: 279px;
+        left: 312px;
+        width: 167px;
     }
     #educationPage>section:nth-child(2)>div:nth-child(4){
         position: absolute;
-        top: 370px;
-        left: 155px;
+        top: 387px;
+        left: 312px;
     }
     #educationPage>section:nth-child(2)>div:nth-child(2)>h2,#educationPage>section:nth-child(2)>div:nth-child(3)>h2,#educationPage>section:nth-child(2)>div:nth-child(4)>h2{
         font-family: "Open Sans";
@@ -211,7 +211,7 @@
 }
 
 /* Responsive mobile(large) size */
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (min-width: 425px) and (max-width: 767px) {
     #educationPage{
         position: absolute;
         top: 1093px;

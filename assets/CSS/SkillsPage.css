@@ -110,8 +110,123 @@
 
 }
 
+/* Responsive Tablet size */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #skillsPage{
+        position: absolute;
+        top: 1852px;
+        width: 100%;
+        height: 720px;
+        background: #ECF0F1;
+    }
+
+    #skillsPage>section:nth-child(1){
+        position: absolute;
+        width: 125px;
+        height: 65px;
+        top: 65px;
+        left: 40%;
+    }
+
+    #skillsPage>section:nth-child(1)>h3{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
+        color: #FF3366;
+
+    }
+    #skillsPage>section:nth-child(1)>h1{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 29px;
+        color: #2c3e50;
+        bottom: -5px;
+    }
+
+    #skillsPage>section:nth-child(2){
+        position: absolute;
+        width: 60%;
+        height: 490px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-row-gap: 33px;
+        grid-column-gap: 55px;
+        top: 155px;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+    }
+
+    #skillsPage>section:nth-child(2)>div {
+        background: #2c3e50;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    #skillsPage>section:nth-child(2)>div>div{
+        position: relative;
+        width: 75px;
+        height: 75px;
+        top: 14px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+    }
+
+    #skillsPage>section:nth-child(2)>div:nth-child(1)>div{
+        background-image: url("../images/web/html png.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #skillsPage>section:nth-child(2)>div:nth-child(2)>div{
+        background-image: url("../images/web/CSS_New.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #skillsPage>section:nth-child(2)>div:nth-child(3)>div{
+        background-image: url("../images/web/js_new.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #skillsPage>section:nth-child(2)>div:nth-child(4)>div{
+        background-image: url("../images/web/java.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #skillsPage>section:nth-child(2)>div:nth-child(5)>div{
+        background-image: url("../images/web/mysql png.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #skillsPage>section:nth-child(2)>div:nth-child(6)>div{
+        background-image: url("../images/web/hinernate_new.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #skillsPage>section:nth-child(2)>div>h3{
+        position: absolute;
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 15px;
+        color: #D5D5D5;
+        right: 0px;
+        bottom: 7px;
+        left: 77px;
+        margin: auto;
+
+    }
+}
+
 /* Responsive mobile(large) size */
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (min-width: 425px) and (max-width: 767px) {
     #skillsPage{
         position: absolute;
         top: 1592px;
