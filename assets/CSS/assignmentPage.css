@@ -41,34 +41,75 @@
     top: 172px;
     left: 140px;
     display: flex;
-    flex-direction: column;
+
     justify-content: space-between;
 }
 #assPage>section:nth-child(2)>div{
     background: #ECF0F1;
     border: 1px solid red;
-    width: 90%;
-    height: 30%;
+    width: 30%;
+    height: 90%;
 }
 
-#assPage>section:nth-child(2)>div>div:nth-child(1){
-    
+#Card01>div:nth-child(1),#Card02>div:nth-child(1),#Card03>div:nth-child(1){
+    position: absolute;
+    border: 1px solid red;
+    width: 30%;
+    height: 234px;
 }
 
-#1stCard>div:nth-child(1){
+#Card01>div:nth-child(1){
     background-image: url("../images/web/project 02.jpeg");
     background-position: center;
     background-size: cover;
 }
-#2ndCard>div:nth-child(1){
+
+#Card02>div:nth-child(1){
     background-image: url("../images/web/project 02.jpeg");
     background-position: center;
     background-size: cover;
 }
-#3rdCard>div:nth-child(1){
+#Card03>div:nth-child(1){
     background-image: url("../images/web/project 02.jpeg");
     background-position: center;
     background-size: cover;
 }
+
+#Card01>div:nth-child(2)>button,#Card02>div:nth-child(2)>button,#Card03>div:nth-child(2)>button{
+    position: relative;
+    top: 395px;
+    left: 73px;
+    width: 200px;
+    height: 35px;
+    background: #2c3e50;
+    font-family: "Open Sans Semibold", serif;
+    font-size: 18px;
+    color: #ECF0F1;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+#Card01>div:nth-child(2)>h2,#Card02>div:nth-child(2)>h2,#Card03>div:nth-child(2)>h2{
+    position: relative;
+    top: 246px;
+    left: 95px;
+    font-size: 20px;
+    color: #34495e;
+    font-family: "Open Sans";
+    font-weight: 650;
+    width: max-content;
+}
+
+#Card01>div:nth-child(2)>p,#Card02>div:nth-child(2)>p,#Card03>div:nth-child(2)>p{
+    position: relative;
+    font-size: 17px;
+    color: #34495e;
+    font-family: "Open Sans";
+    width: max-content;
+}
+
+
 
 
