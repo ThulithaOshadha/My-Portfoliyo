@@ -172,9 +172,9 @@
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #contactMePage{
         position: absolute;
-        top: 4337px;
+        top: 3684px;
         width: 100%;
-        height: 1170px;
+        height: 1230px;
         background: #2c3e50;
     }
 
@@ -182,8 +182,8 @@
         position: absolute;
         width: 200px;
         height: 70px;
-        top: 50px;
-        left: 35%;
+        top: 65px;
+        left: 40%;
     }
 
     #contactMePage>section:nth-child(1)>h3{
@@ -206,10 +206,10 @@
 
     #contactMePage>section:nth-child(2){
         position: absolute;
-        width: 80%;
+        width: 82%;
         height: 963px;
         top: 150px;
-        left: 44px;
+        left: 71px;
         margin: 0;
     }
 
@@ -217,7 +217,7 @@
         background: #34495E;
         border-radius: 30px;
         width: 100%;
-        height: 100%;
+        height: 105%;
     }
     #contactMePage>section:nth-child(2)>form>fieldset{
         border: 0px;
@@ -237,40 +237,40 @@
         width: 250px;
         height: 28px;
         top: 30px;
-        left: 25px;
+        left: 20px;
     }
     #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(2){
         position: absolute;
-        width: 250px;
+        width: 260px;
         height: 28px;
-        top: 95px;
-        left: 38px;
+        top: 35px;
+        left: 322px;
     }
     #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(3){
         position: absolute;
-        width: 250px;
+        width: 547px;
         height: 28px;
-        top: 153px;
-        left: 38px;
+        top: 110px;
+        left: 33px;
     }
     #contactMePage>section:nth-child(2)>form>fieldset>input:nth-child(4){
         position: absolute;
-        width: 250px;
-        height: 150px;
-        top: 213px;
-        left: 38px;
+        width: 546px;
+        height: 165px;
+        top: 186px;
+        left: 33px;
     }
 
     #contactMePage>section:nth-child(2)>form>fieldset>button{
         position: absolute;
         background: #FF3366;
         bottom: 525px;
-        left: 71px;
+        left: 37px;
         border-color: #FF3366;
-        width: 190px;
+        width: 137px;
         height: 33px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 17px;
         font-family: "Open Sans";
         font-weight: 500;
         color: #ECF0F1;
@@ -281,14 +281,14 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 40px;
-        height: 325px;
+        width: 60px;
+        height: 350px;
         top: 498px;
-        right: 150px;
+        right: 290px;
     }
     #contactMePage>section:nth-child(2)>aside:nth-child(2)>div{
-        width: 48px;
-        height: 48px;
+        width: 52px;
+        height: 52px;
         background-position: center;
         background-size: cover;
     }
@@ -305,13 +305,13 @@
     #contactMePage>section:nth-child(2)>div>h1{
         font-family: "Open Sans";
         font-weight: 500;
-        font-size: 17px;
+        font-size: 19px;
         color: #ECF0F1;
         margin: 0;
     }
     #contactMePage>section:nth-child(2)>div>h3,#contactMePage>section:nth-child(2)>div>address>h3{
         font-family: "Open Sans Semibold";
-        font-size: 13px;
+        font-size: 14px;
         color: #ECF0F1;
         margin-top: 8px;
     }
@@ -320,22 +320,22 @@
         position: absolute;
         width: 160px;
         height: 100px;
-        top: 557px;
-        right: 42px;
+        top: 560px;
+        right: 196px;
     }
     #contactMePage>section:nth-child(2)>div:nth-child(4){
         position: absolute;
         width: 160px;
         height: 100px;
-        top: 692px;
-        right: 31px;
+        top: 705px;
+        right: 185px;
     }
     #contactMePage>section:nth-child(2)>div:nth-child(5){
         position: absolute;
         width: 160px;
         height: 100px;
-        top: 832px;
-        right: 42px;
+        top: 852px;
+        right: 196px;
     }
 
     #contactMePage>section:nth-child(2)>div:nth-child(3)>h3{
