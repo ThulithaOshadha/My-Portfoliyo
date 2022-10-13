@@ -40,7 +40,6 @@
     top: 215px;
     left: 185px;
     display: flex;
-
     justify-content: space-between;
 }
 #assPage>section:nth-child(2)>div{
