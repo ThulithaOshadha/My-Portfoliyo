@@ -112,7 +112,7 @@
         position: absolute;
         top: 3052px;
         width: 100%;
-        height: 1135px;
+        height: 630px;
         background: #ECF0F1;
     }
 
@@ -120,7 +120,7 @@
         position: absolute;
         width: 170px;
         height: 65px;
-        top: 55px;
+        top: 65px;
         left: 40%;
     }
 
@@ -145,36 +145,34 @@
 
     #projectPage>section:nth-child(2){
         position: absolute;
-        width: 60%;
-        height: 450px;
-        top: 163px;
+        width: 0%;
+        height: 333px;
+        top: 490px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        /* margin: auto; */
-        margin: 0;
+        margin: auto;
     }
 
     #projectPage>section:nth-child(2)>div:nth-child(1){
         position: relative;
-        width: 230px;
-        height: 230px;
-        top: 525px;
-        left: 100px;
+        width: 250px;
+        height: 250px;
+        top: -181px;
+        left: 60px;
         background-image: url("../images/web/project 02.jpeg");
         background-position: center;
         background-size: cover;
-        margin-top: 70px;
     }
 
     #projectPage>section:nth-child(2)>div:nth-child(2){
         position: absolute;
-        width: 230px;
-        height: 230px;
-        top: 373px;
+        width: 300px;
+        height: 300px;
+        top: -448px;
         right: 0px;
         bottom: 0px;
-        left: 100px;
+        left: -157px;
         margin: auto;
         background-image: url("../images/web/project 01.jpeg");
         background-position: center;
@@ -184,10 +182,10 @@
 
     #projectPage>section:nth-child(2)>div:nth-child(3){
         position: absolute;
-        width: 230px;
-        height: 230px;
-        top: -5px;
-        right: -74px;
+        width: 250px;
+        height: 250px;
+        top: -181px;
+        right: 60px;
         background-image: url("../images/web/project 03.jpeg");
         background-position: center;
         background-size: cover;
@@ -202,23 +200,20 @@
         position: absolute;
         font-family: "Open Sans";
         font-weight: 700;
-        font-size: 16px;
+        font-size: 18px;
         color: #2c3e50;
-        top: 393px;
-        left: 102px;
-
-
+        bottom: 80px;
+        left: 250px;
     }
 
     #projectPage>section:nth-child(4)>p{
         position: absolute;
         font-family: "Open Sans";
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         color: #2c3e50;
-        left: 10px;
-        bottom: 48px;
-        margin: 0;
+        left: 30px;
+        bottom: 10px;
     }
 }
 
