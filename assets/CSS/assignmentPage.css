@@ -112,6 +112,123 @@
     left: 19px;
 }
 
+/* Responsive Laptop(small) size */
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+    #assPage{
+        position: absolute;
+        top: 3800px;
+        width: 100%;
+        height: 720px;
+        background: #34495E;
+        z-index: 2;
+    }
+
+    #assPage>section:nth-child(1){
+        position: absolute;
+        width: 250px;
+        height: 70px;
+        top: 65px;
+        left: 40%;
+    }
+    #assPage>section:nth-child(1)>h3{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 20px;
+        color: #FF3366;
+
+    }
+    #assPage>section:nth-child(1)>h1{
+        position: relative;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 40px;
+        color: #ECF0F1;
+        bottom: -5px;
+    }
+
+    #assPage>section:nth-child(2){
+        position: absolute;
+        width: 75%;
+        height: 51%;
+        top: 215px;
+        left: 140px;
+        display: flex;
+
+        justify-content: space-between;
+    }
+    #assPage>section:nth-child(2)>div{
+        background: #ECF0F1;
+        width: 30%;
+        height: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    #Card01>div:nth-child(1),#Card02>div:nth-child(1),#Card03>div:nth-child(1){
+        position: absolute;
+        width: 30%;
+        height: 150px;
+    }
+
+    #Card01>div:nth-child(1){
+        background-image: url("../images/assignment_page_images/Assignment_01.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Card02>div:nth-child(1){
+        background-image: url("../images/assignment_page_images/Assingment_POS.png");
+        background-position: center;
+        background-size: cover;
+    }
+    #Card03>div:nth-child(1){
+        background-image: url("../images/assignment_page_images/assignment_calc.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Card01>div:nth-child(2)>button,#Card02>div:nth-child(2)>button,#Card03>div:nth-child(2)>button{
+        position: relative;
+        top: 240px;
+        left: 30px;
+        width: 167px;
+        height: 30px;
+        background: #2c3e50;
+        font-family: "Open Sans Semibold", serif;
+        font-size: 16px;
+        color: #ECF0F1;
+        border: 0;
+        border-radius: 10px;
+    }
+
+
+
+    #Card01>div:nth-child(2)>h2,#Card02>div:nth-child(2)>h2,#Card03>div:nth-child(2)>h2{
+        position: relative;
+        top: 165px;
+        left: 46px;
+        font-size: 18px;
+        color: #34495e;
+        font-family: "Open Sans";
+        font-weight: 650;
+        width: max-content;
+    }
+
+    #Card01>div:nth-child(2)>p,#Card02>div:nth-child(2)>p,#Card03>div:nth-child(2)>p{
+        position: relative;
+        font-size: 14px;
+        color: #34495e;
+        font-family: "Open Sans";
+        width: 204px;
+        height: 30px;
+        margin: 0;
+        top: 175px;
+        left: 11px;
+    }
+}
+
 /* Responsive Tablet size */
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #assPage{

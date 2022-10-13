@@ -23,7 +23,7 @@
 @media all and (min-width: 1024px) and (max-width: 1439px) {
     #footer{
         position: absolute;
-        top: 4458px;
+        top: 5170px;
         width: 100%;
         height: 130px;
         background: #ECF0F1;
@@ -47,7 +47,7 @@
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #footer{
         position: absolute;
-        top: 4914px;
+        top: 5783px;
         width: 100%;
         height: 90px;
         background: #ECF0F1;
