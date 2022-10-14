@@ -1,4 +1,9 @@
 $("#inputOrderID").focus();
+var ordersArray = [];
+
+
+let autoID = generateOrderId();
+$("#inputOrderID").val(autoID);
 
 function loadCusId() {
     $("#inputCusID").empty();
@@ -99,5 +104,43 @@ function calculateTotal(price){
     return tot;
 
 
+}
+
+$("#btnPurchase").click(function (){
+
+    let id = $("#inputOrderID").val();
+    let customer = $("#inputCusID").val();
+    let items = orderItemArray;
+    let total = "2000";
+    let date = $("#inputDate").val();
+
+   var orderOB = {
+       id: id,
+       customer: customer,
+       items: items,
+       total: total,
+       date: date,
+   }
+
+   ordersArray.push(orderOB);
+});
+
+function generateOrderId(){
+    if (ordersArray.length>0){
+        let id = ordersArray[ordersArray.length-1].id;
+        let [pre, frag] = id.split("-");
+        let num = parseInt(frag) + 1;
+        let count = num.toString().length;
+        if (count == 1) {
+            return pre + "-00" + num;
+        } else if (count == 2) {
+            return pre + "-0" + num;
+        } else {
+            return pre + "-" + num;
+        }
+
+    }else {
+        return "R-001"
+    }
 }
 
