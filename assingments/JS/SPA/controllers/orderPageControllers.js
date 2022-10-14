@@ -1,4 +1,4 @@
-$("#inputOrderID").focus();
+
 var ordersArray = [];
 
 
@@ -123,6 +123,10 @@ $("#btnPurchase").click(function (){
    }
 
    ordersArray.push(orderOB);
+   console.log(ordersArray);
+   //clearAllTexts();
+    let genID = generateOrderId();
+    $("#inputOrderID").val(genID);
 });
 
 function generateOrderId(){
@@ -142,5 +146,22 @@ function generateOrderId(){
     }else {
         return "R-001"
     }
+}
+
+function clearAllTexts(){
+    $("#inputOrderID").val("");
+    $("#inputDate").val("");
+    $("#inputCusID").val("");
+    $("#inputCusSalary").val("");
+    $("#inputCusName").val("");
+    $("#inputAddress").val("");
+    $("#inputItemID").val("");
+    $("#inputItemName").val("");
+    $("#inputPrice").val("");
+    $("#inputQty").val("");
+    $("#inputOrderQty").val("");
+    $("#inputCash").val("");
+    $("#inputDiscount").val("");
+    $("#inputBalance").val("");
 }
 

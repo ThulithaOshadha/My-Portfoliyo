@@ -18,6 +18,7 @@ $("#addItemBtn").click(function (){
     loadItemTable();
     bindRowClickEvents();
     loadItemId();
+    clearTextItemDet();
 });
 
 function loadItemTable(){
@@ -238,4 +239,27 @@ function updateItem(itemCode){
     }else {
         return false;
     }
+}
+
+$("#btnItemSearch").click(function (){
+    let code = $("#searchInput").val();
+    let availableItem = searchItem(code);
+    if (availableItem!=null){
+        $("#txtItemCode").val(availableItem.id);
+        $("#txtItemName").val(availableItem.name);
+        $("#txtItemPrice").val(availableItem.price);
+        $("#txtItemQty").val(availableItem.qty);
+    }
+});
+
+$("#btnItemClear").click(function (){
+   clearTextItemDet();
+});
+
+function clearTextItemDet(){
+    $("#searchInput").val("");
+    $("#txtItemCode").val("");
+    $("#txtItemName").val("");
+    $("#txtItemPrice").val("");
+    $("#txtItemQty").val("");
 }
