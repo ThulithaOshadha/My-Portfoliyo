@@ -17,7 +17,7 @@
 <h3> This site was built using github pages and 00Webhost </h3>
 <ui>
    <li><a href src="[https://thulithaoshadha.github.io/My-Portfoliyo/](https://thulithaoshadha.github.io/My-Portfoliyo/)" target="_blank"> github page url </a></li>
-   <li><a href src="[ https://https://wireframe.cc/hRcV7S](http://thulithaoshadha.epizy.com/)" target="_blank"> 00Webhost url </a></li>
+   <li><a href src="[[ https://https://wireframe.cc/hRcV7S](http://thulithaoshadha.epizy.com/)](http://thulithaoshadha.epizy.com/?i=1)" target="_blank"> 00Webhost url </a></li>
 </ui>
 
 <h3> Developed by Thulitha Oshadha </h3>
