@@ -10,5 +10,6 @@
 <ui>
    <li><a href src=" https://www.gloomaps.com/e3md3f3V7k" target="_blank"> site map url </a></li>
    <li><a href src=" https://https://wireframe.cc/hRcV7S" target="_blank"> wireframe url </a></li>
-   <li> Mockup url </li>
+   <a href=" https://https://wireframe.cc/hRcV7S" target="_blank" >view more</a>
+
 </ui>
