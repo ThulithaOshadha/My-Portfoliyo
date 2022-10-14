@@ -5,18 +5,71 @@
 }
 
 #assignmentMainPage>section:nth-child(1){
-    position: relative;
-    width: 72%;
+    border: 1px solid red;
+    position: absolute;
+    width: 80%;
     height: 59%;
-    top: 215px;
-    left: 185px;
-    display: flex;
-    justify-content: space-between;
+    top: 160px;
+    left: 132px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 60px;
+    grid-column-gap: 60px;
 }
 #assignmentMainPage>section:nth-child(1)>div{
-    position: relative;
+    border: 1px solid red;
     background: #ECF0F1;
-    width: 27%;
-    height: 100%;
+    width: 250px;
+    height: 450px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(1){
+    position: relative;
+    border: 1px solid red;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+}
+
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(2)>h2{
+    position: relative;
+    top: 0px;
+    left: 40px;
+    font-size: 20px;
+    color: #34495e;
+    font-family: "Open Sans";
+    font-weight: 650;
+    width: max-content;
+}
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(2)>p{
+    position: relative;
+    font-size: 16px;
+    color: #34495e;
+    font-family: "Open Sans";
+    width: 240px;
+    height: 30px;
+    margin: 0;
+    top: 5px;
+    left: 12px;
+}
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(2)>button{
+    position: relative;
+    top: 80px;
+    left: 27px;
+    width: 190px;
+    height: 33px;
+    background: #2c3e50;
+    font-family: "Open Sans Semibold", serif;
+    font-size: 17px;
+    color: #ECF0F1;
+    border: 0;
+    border-radius: 10px;
+}
+
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
 }
