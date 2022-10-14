@@ -240,3 +240,20 @@ function updateCustomer(code){
         return false;
     }
 }
+
+$("#btnCustomerSearch").click(function (){
+    let code = $("#customerSearchInput").val();
+    let availableCustomer = searchCustomer(code);
+    if (availableCustomer!=null){
+        $("#txtCustomerID").val(availableCustomer.id);
+        $("#txtCustomerName").val(availableCustomer.name);
+        $("#txtCustomerAddress").val(availableCustomer.address);
+        $("#txtCustomerSalary").val(availableCustomer.salary);
+    }
+});
+
+
+$("#customerClearBtn").click(function (){
+    clearAllTexts();
+});
+
