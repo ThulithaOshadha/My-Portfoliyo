@@ -5,7 +5,6 @@
 }
 
 #assignmentMainPage>section:nth-child(1){
-    border: 1px solid red;
     position: absolute;
     width: 80%;
     height: 59%;
@@ -18,7 +17,6 @@
     grid-column-gap: 60px;
 }
 #assignmentMainPage>section:nth-child(1)>div{
-    border: 1px solid red;
     background: #ECF0F1;
     width: 250px;
     height: 450px;
@@ -27,7 +25,6 @@
 
 #assignmentMainPage>section:nth-child(1)>div>div:nth-child(1){
     position: relative;
-    border: 1px solid red;
     top: 0px;
     left: 0px;
     width: 100%;
