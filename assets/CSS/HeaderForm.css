@@ -22,6 +22,11 @@ header>nav>ul>li{
     padding-left: 25px;
     font-family: "Open Sans Semibold";
 }
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: #2c3e50;
+
+}
 
 header>div{
     position: absolute;

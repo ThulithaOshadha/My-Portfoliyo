@@ -65,6 +65,13 @@
     border: 0;
     border-radius: 10px;
 }
+#assignmentMainPage>section:nth-child(1)>div>div:nth-child(2)>button>a{
+    text-decoration: none;
+    font-family: "Open Sans Semibold", serif;
+    font-size: 17px;
+    color: #ECF0F1;
+
+}
 
 #assignmentMainPage>section:nth-child(1)>div>div:nth-child(1)>img{
     width: 100%;

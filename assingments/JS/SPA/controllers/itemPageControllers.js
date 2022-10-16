@@ -76,7 +76,7 @@ validationArray.push({reg: itemQtyReg, field: $('#txtItemQty'),error:'Item QTY P
 
 
 $("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQty").on('keyup', function (event) {
-    checkValidity();
+    checkValidityitem();
 });
 
 $("#txtItemCode").on('keydown', function (event) {
@@ -124,7 +124,7 @@ $("#txtItemQty").on('keydown', function (event) {
 });
 
 
-function checkValidity() {
+function checkValidityitem() {
     let errorCount=0;
     for (let validation of validationArray) {
         if (check(validation.reg,validation.field)) {
