@@ -22,6 +22,12 @@ header>nav>ul>li{
     padding-left: 25px;
     font-family: "Open Sans Semibold";
 }
+
+header>nav>ul>li:hover{
+    border-bottom: 3px solid red;
+}
+
+
 header>nav>ul>li>a{
     text-decoration: none;
     color: #2c3e50;

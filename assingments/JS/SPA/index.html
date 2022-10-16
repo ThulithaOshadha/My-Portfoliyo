@@ -344,7 +344,7 @@
         </div>
         <div class="col-md-6">
           <label for="inputDate" class="form-label">Date :</label>
-          <input type="text" class="form-control" id="inputDate" placeholder="10/10/2020">
+          <input type="date" class="form-control" id="inputDate" placeholder="10/10/2020">
         </div>
         <div class="col-md-5">
           <label for="inputCusID" class="form-label">Customer ID :</label>
@@ -439,10 +439,10 @@
 
 
         <h1 id="totalLabel">
-          Total = 2700.00
+          Total =
         </h1>
         <h2 id="subTotalLabel">
-          Sub Total = 2400.00
+          Sub Total =
         </h2>
 
         <!--Receipt-->
@@ -454,13 +454,15 @@
           </div>
           <div class="col-md-5">
             <label for="inputDiscount" class="form-label">Discount :</label>
-            <select id="inputDiscount" class="form-select" >
+            <input type="number" class="form-control" id="inputDiscount" placeholder="5%">
+
+            <!--<select id="inputDiscount" class="form-select" >
               <option selected>Discount</option>
               <option>5%</option>
               <option>10%</option>
               <option>12%</option>
 
-            </select>
+            </select>-->
           </div>
 
 

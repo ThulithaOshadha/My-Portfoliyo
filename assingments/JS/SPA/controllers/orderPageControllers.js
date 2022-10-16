@@ -139,7 +139,7 @@ $("#btnAddCart").click(function (){
 });
 
 function setTotalToLabel(t){
-    document.getElementById('totalLabel').innerHTML = 'Total = '+t;
+    document.getElementById('subTotalLabel').innerHTML = 'Sub Total = '+t;
 }
 
 $("#inputCash").on('keydown', function (event) {
@@ -150,12 +150,26 @@ $("#inputCash").on('keydown', function (event) {
         let balance = cash - finalTotal;
         $("#inputBalance").val(balance);
         if (cash>finalTotal){
-            $('#btnPurchase').attr('disabled',false);
+            $('#inputDiscount').focus();
         }else {
             $('#btnPurchase').attr('disabled',true);
         }
     }
 
+});
+
+$("#inputDiscount").on('keydown', function (event) {
+    if (event.key == "Enter"){
+       let dis = $("#inputDiscount").val();
+        let finalTotal = calculateTotal();
+        document.getElementById('subTotalLabel').innerHTML = 'Sub Total = '+finalTotal;
+        document.getElementById('totalLabel').innerHTML = 'Total = '+(finalTotal-dis);
+        if (dis>null){
+            $('#btnPurchase').attr('disabled',false);
+        }else {
+            $('#btnPurchase').attr('disabled',true);
+        }
+    }
 });
 
 function calculateTotal(){
@@ -188,8 +202,6 @@ $("#btnPurchase").click(function (){
    console.log(ordersArray);
     $("#ordersTable").empty();
 
-
-
    clearAllTexts();
     let genID = generateOrderId();
     $("#inputOrderID").val(genID);
@@ -212,7 +224,7 @@ function generateOrderId(){
         }
 
     }else {
-        return "R-001"
+        return "R-001";
     }
 }
 
@@ -249,6 +261,7 @@ function updateItemQty(itemCode,orderQt){
     if (item != null) {
         item.qty = orderQt;
         loadItemTable();
+        bindRowClickEvents();
         return true;
 
     }else {
@@ -266,7 +279,7 @@ function searchOrder(orderID) {
     return null;
 }
 
-function loadTableFromOrderID(id){
+/*function loadTableFromOrderID(id){
     $("#ordersTable").empty();
     let i = searCartArrayFromOrderArray();
     console.log(i);
@@ -281,7 +294,7 @@ function loadTableFromOrderID(id){
 
 
     }
-}
+}*/
 
 function clearAllTexts(){
     $("#inputOrderID").val("");
@@ -293,7 +306,11 @@ function clearAllTexts(){
     $("#inputCash").val("");
     $("#inputDiscount").val("");
     $("#inputBalance").val("");
-    clearAllTextsInitemDet
+    document.getElementById('subTotalLabel').innerHTML = 'Sub Total = ';
+    document.getElementById('totalLabel').innerHTML = 'Total = ';
+
+    clearAllTextsInitemDet();
+
 }
 function clearAllTextsInitemDet() {
     $("#inputItemID").val("");
