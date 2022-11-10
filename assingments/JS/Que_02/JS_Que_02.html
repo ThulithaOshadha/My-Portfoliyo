@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-Que_02</title>
+    <style>
+    body{
+      background: #171616;
+    }
+    #sepLine1,#sepLine2{
+      position: absolute;
+      left: 5%;
+      width: 75%;
+      height: 2px;
+      background: #e2eaea;
+    }
+    #sepLine1{
+      top: 80%;
+    }
+    #sepLine2{
+      top: 65%;
+    }
+    #boxLine01>div{
+      position: absolute;
+      top: 58%;
+      left: 5%;
+      width: 100px;
+      height: 35px;
+      background: yellow;
+    }
+    #secondRow{
+      position: absolute;
+      top: 73%;
+      left: 28%;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #secondRow>div{
+      width: 100px;
+      height: 35px;
+      background: yellow;
+    }
+    #thirdRow>div{
+      position: absolute;
+      top: 82%;
+      right: 20%;
+      width: 100px;
+      height: 35px;
+      background: yellow;
+    }
+
+    </style>
+</head>
+<body>
+
+<div id="boxLine01">
+
+</div>
+<div id="secondRow">
+ <!-- <div></div>
+  <div></div>
+  <div></div>
+  <div></div>-->
+</div>
+<div id="thirdRow">
+    <div></div>
+</div>
+
+<div></div>
+
+
+<div id="sepLine1"></div>
+<div id="sepLine2"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+  var colors = ["yellow","#FFBFCD","#EE83EF","#FE0000","#008001","#0000FE"];
+
+  function nextColor(){
+      var lastColor=colors.pop();
+      colors.unshift(lastColor);
+  }
+
+  function queProcess(){
+      $("#secondRow").empty();
+      for (let i = 0; i < colors.length; i++) {
+          if (i==0){
+              $("#boxLine01").append(`<div style="background: ${colors[i]}"></div>`);
+          }
+          if (i>0 && i<colors.length-1){
+              $("#secondRow").append(`<div style="background: ${colors[i]}"></div>`);
+          }
+          if (i>=colors.length-1){
+              $("#thirdRow").append(`<div style="background: ${colors[i]}"></div>`);
+          }
+
+      }
+      nextColor();
+  }
+  setInterval(queProcess,900);
+
+
+
+</script>
+</body>
+</html>
