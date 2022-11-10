@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Que</title>
+    <style>
+
+        body{
+            background: #E9E6E6;
+        }
+        #sepLine{
+            position: absolute;
+            left: 5%;
+            top: 65%;
+            width: 75%;
+            height: 2px;
+            background: cadetblue;
+        }
+
+        #officeDiv{
+            position: absolute;
+            top: 40%;
+            right: 8%;
+            width: 180px;
+            height: 180px;
+            background-image: url("assets/office01.png");
+            background-size: cover;
+        }
+        #personBox{
+            position: absolute;
+            width: 75%;
+            height: 120px;
+            top: 47%;
+            left: 4%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #personBox>div{
+            width: 120px;
+            height: 120px;
+            background-image: url("assets/person.gif");
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+<div id="personBox">
+    <!--<div id="person1">
+
+    </div>
+    <div id="person2">
+
+    </div>
+    <div id="person3">
+
+    </div>
+    <div id="person4">
+
+    </div>
+    <div id="person5">
+
+    </div>
+    <div id="person6">-->
+
+    </div>
+</div>
+
+<div id="officeDiv"></div>
+<div id="sepLine"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    /*var persons=["A","B","C","D","E","F"];
+    var count=0;
+
+    function nextPerson(){
+
+        var lastPerson = persons.pop();
+        persons.unshift(lastPerson);
+    }
+
+    renderQue();
+    function renderQue(){
+        for (let i = 0; i < persons.length; i++) {
+            nextPerson();
+        }
+    }
+    renderQue();*/
+    //setInterval(renderQue,900);
+
+    var person={
+        persons:[
+            {name:'A', url:'assets/person.gif'},
+            {name:'B', url:'assets/person.gif'},
+            {name:'C', url:'assets/person.gif'},
+            {name:'D', url:'assets/person.gif'},
+            {name:'E', url:'assets/person.gif'},
+            {name:'F', url:'assets/person.gif'}
+        ],
+        nextPerson:function (){
+            var lastPerson= this.persons.pop();
+            this.persons.unshift(lastPerson);
+        }
+    }
+
+
+
+    function renderQue(){
+        $("#personBox>div>h1").empty();
+        $("#personBox").empty();
+        for (let i = 0; i < person.persons.length; i++) {
+            $("#personBox").append(`<div style="background-image: ${person.persons[i].url}"></div>`);
+            $("#personBox").append(`<h1>${person.persons[i].name}</h1>`);
+        }
+        person.nextPerson();
+    }
+
+    setInterval(renderQue,900);
+
+</script>
+</body>
+</html>
