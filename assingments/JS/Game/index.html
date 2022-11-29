@@ -706,10 +706,11 @@
 
     function playerFourWinner(cardTypeVal) {
 
-        setTimeout(function () {
+        /*setTimeout(function () {
                 ownPlay()
             },
-            1000);
+            1000);*/
+        ownPlay();
         setTimeout(function () {
                 playerOneRound(cardTypeVal)
             },
@@ -718,10 +719,10 @@
                 myOtherPlayerRound(cardTypeVal)
             },
             3000);
-        setTimeout(function () {
+        /*setTimeout(function () {
                 playerTwoRound(cardTypeVal)
             },
-            4000);
+            4000);*/
         setTimeout(function (){
                 findBestPlayer()},
             5000);
