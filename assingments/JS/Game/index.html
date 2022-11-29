@@ -620,12 +620,12 @@
             console.log('iam 2 best player');
             clearCardsPositions();
             //$("#playerOnePosition").empty();
-            $("#playerOnePosition").append(`<img src="${playerOne[1].image}" alt="cards">`);
-            cardTypeVal=playerOne[1].typeValue;
-            turnArray.push({player: 2, typeValue: playerOne[1].typeValue, value: playerOne[1].value});
+            $("#playerOnePosition").append(`<img src="${playerOne[0].image}" alt="cards">`);
+            cardTypeVal=playerOne[0].typeValue;
+            turnArray.push({player: 2, typeValue: playerOne[0].typeValue, value: playerOne[0].value});
             console.log('vard tupe neeeew val '+cardTypeVal);
             playerTwoWinner(cardTypeVal);
-            playerOne.splice(1,1);
+            playerOne.splice(0,1);
             otherWinnerHand++;
             $("#otherTrumpCalc").empty();
             $("#otherTrumpCalc").append(`<h1 style="color: #003eff">${otherWinnerHand}</h1>`);
@@ -634,22 +634,26 @@
         }else if (bestPlayer==3){
             alert('second round i,m player 3');
             clearCardsPositions();
-            $("#myPlayerPosition").append(`<img src="${myPlayer[1].image}" alt="cards">`);
-            cardTypeVal=myPlayer[1].typeValue;
-            turnArray.push({player: 3, typeValue: myPlayer[1].typeValue, value: myPlayer[1].value});
+            $("#myPlayerPosition").append(`<img src="${myPlayer[0].image}" alt="cards">`);
+            cardTypeVal=myPlayer[0].typeValue;
+            turnArray.push({player: 3, typeValue: myPlayer[0].typeValue, value: myPlayer[0].value});
             playerTreeWinner(cardTypeVal);
-            myPlayer.splice(1,1);
+            myPlayer.splice(0,1);
             ourWinerHand++;
+            $("#ourTrumpCalc").empty();
+            $("#ourTrumpCalc").append(`<h1 style="color: #003eff">${ourWinerHand}</h1>`);
         }
         else if (bestPlayer==4){
             alert('hi second round player 4');
             clearCardsPositions();
-            $("#playerTwoPosition").append(`<img src="${playerTwo[1].image}" alt="cards">`);
-            cardTypeVal=myPlayer[1].typeValue;
-            turnArray.push({player: 4, typeValue: playerTwo[1].typeValue, value: playerTwo[1].value});
+            $("#playerTwoPosition").append(`<img src="${playerTwo[0].image}" alt="cards">`);
+            cardTypeVal=myPlayer[0].typeValue;
+            turnArray.push({player: 4, typeValue: playerTwo[0].typeValue, value: playerTwo[0].value});
             playerFourWinner(cardTypeVal);
-            playerTwo.splice(1,1);
+            playerTwo.splice(0,1);
             otherWinnerHand++;
+            $("#otherTrumpCalc").empty();
+            $("#otherTrumpCalc").append(`<h1 style="color: #003eff">${otherWinnerHand}</h1>`);
         }
         /*else {
             otherWinnerHand++
