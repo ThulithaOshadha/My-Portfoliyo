@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<div class="ui-widget-content ui-corner-all" id="startPage"></div>
+
+<div id="gamePage"></div>
 <div id="playingBox">
     <div id="myPosition"></div>
     <div id="playerOnePosition"></div>
@@ -58,6 +61,39 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="assets/lib/jquery-ui.min.js"></script>
 <script>
+
+// run the currently selected effect
+
+
+
+
+
+    $(function(){
+        console.log('done function');
+        function runEffect() {
+
+            // get effect type from
+            var selectedEffect = "puff";
+
+            // Most effect types need no options passed by default
+            var options = {};
+
+            // Run the effect
+            $( "#startPage" ).show( selectedEffect, options, 20000, callback );
+        };
+
+    //callback function to bring a hidden box back
+        function callback() {
+            setTimeout(function() {
+                $( "#startPage:visible" ).removeAttr( "style" ).fadeOut();
+            }, 10000 );
+        };
+
+    // Set effect from select menu value
+        runEffect();
+        $("#startPage" ).hide();
+    });
+
 
     var myHand=[];
     var card={
@@ -412,14 +448,8 @@
         for (let i = 0; i < turnArray.length; i++) {
             if (turnArray[i].typeValue==value1){
                 turnArray[i].value+=100;
-                /*count=turnArray[i].value;
-                bestPlayer=turnArray[i].player;
-                //startFromBestPlayer(bestPlayer);*/
-                //bestPlayer=3;
             }else if (turnArray[i].typeValue==cardTypeVal){
                 turnArray[i].value+=50;
-                ///bestPlayer=2;
-                //startFromBestPlayer(bestPlayer);
             }
         }
         bblSort(turnArray)
@@ -637,9 +667,11 @@
 
         if (bestPlayer==1){
             //$("#myCardBox").empty();
+            //showAlert();
+            alert('hi second round player one');
             ourWinerHand++;
             console.log('our otherWinnerHand '+ourWinerHand);
-            setAlertByRound(word);
+            //setAlertByRound(word);
             $("#ourTrumpCalc>h1").empty();
             $("#ourTrumpCalc").append(`<h1 style="color: #f9f9fa">${ourWinerHand}</h1>`);
             console.log('empty');
@@ -647,11 +679,12 @@
             /*my1stHandProcess();*/
             //$("#myCardBox" ).empty();
             one();
-            alert('hi second round player one');
+
             var word = "you win";
 
-            cd();
+            //cd();
         }else if (bestPlayer==2){
+            //showAlert();
             alert('iam 2 best player');
             clearCardsPositions();
             //$("#playerOnePosition").empty();
@@ -666,6 +699,7 @@
             console.log('iam 2 best player end array');
 
         }else if (bestPlayer==3){
+            //showAlert();
             alert('second round i,m player 3');
             clearCardsPositions();
             $("#myPlayerPosition").append(`<img src="${myPlayer[0].image}" alt="cards">`);
@@ -678,6 +712,7 @@
             $("#ourTrumpCalc").append(`<h1 style="color: #f1f2f5">${ourWinerHand}</h1>`);
         }
         else if (bestPlayer==4){
+            //showAlert();
             alert('hi second round player 4');
             clearCardsPositions();
             $("#playerTwoPosition").append(`<img src="${playerTwo[0].image}" alt="cards">`);
@@ -696,7 +731,7 @@
         }*/
     }
 
-    function setAlertByRound(word){
+    /*function setAlertByRound(word){
         function nextTurnEffect() {
             // get effect type from
             var selectedEffect = "bounce";
@@ -715,7 +750,7 @@
             // Set effect from select menu value
             nextTurnEffect();
         };
-    }
+    }*/
 
 
 
@@ -837,8 +872,8 @@
 
     }*/
 
-    /*function showAlert(){
-        /!*<div className="toggler">
+    function showAlert(){
+        /*<div className="toggler">
             <div id="effect" className="ui-widget-content ui-corner-all">
                 <h3 className="ui-widget-header ui-corner-all">Show</h3>
                 <p>
@@ -846,18 +881,19 @@
                     adipiscing ut, luctus sed, hendrerit vitae, mi.
                 </p>
             </div>
-        </div>*!/
+        </div>*/
         $("#alert").empty();
         $("#alert").append(`<div className="toggler">
             <div id="effect" className="ui-widget-content ui-corner-all">
-                <img id="alertImg" src="assets/cards/H_8.png" alt="cards">
+                <img id="alertImg" src="assets/ui/handAlert.png" alt="cards">
             </div>
         </div>`);
 
 
         function runEffect() {
+            console.log('run effect');
             // get effect type from
-            var selectedEffect = puff;
+            var selectedEffect = bounce;
 
             // Most effect types need no options passed by default
             var options = {};
@@ -882,9 +918,9 @@
         // Set effect from select menu value
         runEffect();
 
-        $( "#effect" ).hide();
+        $( "#effect>div" ).hide();
 
-    }*/
+    }
 
     // run the tryAgain effect
 

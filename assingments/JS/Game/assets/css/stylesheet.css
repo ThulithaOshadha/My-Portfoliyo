@@ -1,3 +1,10 @@
+#startPage{
+    position: absolute;
+    background-image: url("../ui/loading.jpg");
+    background-size: cover;
+    width: 99%;
+    height: 99%;
+}
 #myCardBox{
     position: absolute;
     display: flex;
@@ -37,26 +44,25 @@
 }
 #playingBox{
     position: absolute;
-    top: -160px;
+    top: -150px;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    border: 1px solid red;
     width: 50%;
-    height: 50%;
+    height: 70%;
 }
 
 #myPosition{
     position: absolute;
-    bottom: 0px;
+    bottom: 80px;
     left: 40%;
     width: 125px;
     height: 160px;
 }
 #myPlayerPosition{
     position: absolute;
-    top: 0px;
+    top: 80px;
     left: 40%;
     width: 125px;
     height: 160px;
@@ -120,26 +126,20 @@ color: #5c5252
 }
 
 .toggler { width: 500px; height: 200px; }
-#effect { width: 340px; height: 200px; padding: 0.4em; position: relative; }
+#effect { width: 670px; height: 180px; padding: 0.4em; position: relative; }
 #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
 #effect{
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 50px;
+    left: 300px;
     margin: auto;
 }
-#alertImg{
-    width: 240px;
-    height: 200px;
-}
+
 
 #yourLabel,#playerOneLabel,#playerTwoLabel,#playerThreeLabel{
     position: absolute;
     width: 250px;
     height: 40px;
-    border: 1px solid red;
 }
 #yourLabel{
     bottom: 200px;
@@ -151,7 +151,7 @@ color: #5c5252
     right: 20%;
 }
 #playingBox{
-    background-image: url("../ui/mat.jpg");
+    background-image: url("../ui/wooden board.png");
     background-size: cover;
 }
 
@@ -201,7 +201,27 @@ color: #5c5252
     top: 20px;
     width: 100px;
     height: 100px;
-    border: 1px solid red;
     background-image: url("../ui/handAlert.png");
+    background-size: cover;
+}
+#alert>div{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 200px;
+    height: 50px;
+
+}
+#alertImg{
+    width: 100%;
+    height: 100%;
+}
+
+#gamePage{
+    position: absolute;
+    background-image: url("../ui/map.jpg");
+    background-size: cover;
+    width: 99%;
+    height: 99%;
 }
 
