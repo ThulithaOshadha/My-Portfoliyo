@@ -6,22 +6,34 @@
     left: 30px;
     width: 95%;
     height: 25%;
+    background-image: url("../ui/myHandImg.png");
+    background-size: cover;
     /*border: 1px solid red;*/
 }
 #myCardBox>div{
-    width: 250px;
+    width: 160px;
     height: 100%;
+    border-radius: 10px;
     /*border: 1px solid red;*/
 }
 #myCardBox>div>img{
     width: 160px;
     height: 100%;
     background-size: cover;
+    border-radius: 10px;
 }
 #trumpSelectingBox{
     position: absolute;
     bottom: 30%;
-    width: 15%;
+    width: 16%;
+    height: 60%;
+    background-image: url("../ui/trumpBox.png");
+    background-size: cover;
+}
+#selectable{
+    position: absolute;
+    bottom: 10px;
+    left: 34px;
 }
 #playingBox{
     position: absolute;
@@ -41,7 +53,6 @@
     left: 40%;
     width: 125px;
     height: 160px;
-    border: 1px solid red;
 }
 #myPlayerPosition{
     position: absolute;
@@ -49,7 +60,6 @@
     left: 40%;
     width: 125px;
     height: 160px;
-    border: 1px solid red;
 }
 #playerOnePosition{
     position: absolute;
@@ -57,7 +67,6 @@
     right: 13%;
     width: 125px;
     height: 160px;
-    border: 1px solid red;
 }
 #playerTwoPosition{
     position: absolute;
@@ -65,45 +74,50 @@
     left: 13%;
     width: 125px;
     height: 160px;
-    border: 1px solid red;
 }
 #myPosition>img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 #playerOnePosition>img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 #myPlayerPosition>img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 #playerTwoPosition>img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 #trumpCalcBox{
     position: absolute;
     top: 30%;
     right: 6%;
-    width: 225px;
-    height: 120px;
-    border: 1px solid red;
-    display: flex;
+    width: 220px;
+    height: 224px;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 #trumpCalcBox>div{
+    position: absolute;
     width: 100%;
-    height: 50%;
-    border: 1px solid red;
+    height: 30%;
+    padding-bottom: 20px;
 }
 
 #selectable .ui-selecting { background: #FECA40; }
 #selectable .ui-selected { background: #F39814; color: white; }
 #selectable { list-style-type: none; margin: 0; padding: 0; width: 70%; }
-#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px;}
+#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px;
+color: #5c5252
+}
 
 .toggler { width: 500px; height: 200px; }
 #effect { width: 340px; height: 200px; padding: 0.4em; position: relative; }
@@ -130,8 +144,54 @@
 #yourLabel{
     bottom: 200px;
     left: 40%;
+
 }
 #playerOneLabel{
     bottom: 250px;
     right: 20%;
+}
+#playingBox{
+    background-image: url("../ui/mat.jpg");
+    background-size: cover;
+}
+
+#ourTrumpCalc,#otherTrumpCalc{
+    background-image: url("../ui/handBoard.png");
+    background-size: cover;
+}
+#ourTrumpCalc{
+    top: 0;
+    left: 0;
+}
+#otherTrumpCalc{
+    bottom: 0;
+    left: 0;
+}
+
+#ourTrumpCalc>h2,#otherTrumpCalc>h2{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: white;
+
+}
+
+#ourTrumpCalc>h1,#otherTrumpCalc>h1{
+    position: absolute;
+    left: 120px;
+    top: 4px;
+}
+#trumpImg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#trumpImg>img{
+    position: absolute;
+    top: 75px;
+    left: 65px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
 }
