@@ -51,6 +51,8 @@
     </ol>
 </div>
 
+<div id="nextRoundImgAlert"></div>
+
 <div id="alert"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -637,6 +639,7 @@
             //$("#myCardBox").empty();
             ourWinerHand++;
             console.log('our otherWinnerHand '+ourWinerHand);
+            setAlertByRound(word);
             $("#ourTrumpCalc>h1").empty();
             $("#ourTrumpCalc").append(`<h1 style="color: #f9f9fa">${ourWinerHand}</h1>`);
             console.log('empty');
@@ -646,7 +649,7 @@
             one();
             alert('hi second round player one');
             var word = "you win";
-            setAlertByRound(word);
+
             cd();
         }else if (bestPlayer==2){
             alert('iam 2 best player');
@@ -694,8 +697,24 @@
     }
 
     function setAlertByRound(word){
-        $("#otherTrumpCalc>h1").empty();
-        $("#otherTrumpCalc").append(`<h1 style="color: #fbfbfc">${otherWinnerHand}</h1>`);
+        function nextTurnEffect() {
+            // get effect type from
+            var selectedEffect = "bounce";
+
+            // Most effect types need no options passed by default
+            var options = {};
+
+            // Run the effect
+            $( "#nextRoundImgAlert" ).show( selectedEffect, options, 500, callbackTry );
+        };
+        function callbackTry() {
+            setTimeout(function() {
+                $( "#nextRoundImgAlert:visible" ).removeAttr( "style" ).fadeOut();
+            }, 1000 );
+
+            // Set effect from select menu value
+            nextTurnEffect();
+        };
     }
 
 
@@ -818,8 +837,8 @@
 
     }*/
 
-    function showAlert(){
-        /*<div className="toggler">
+    /*function showAlert(){
+        /!*<div className="toggler">
             <div id="effect" className="ui-widget-content ui-corner-all">
                 <h3 className="ui-widget-header ui-corner-all">Show</h3>
                 <p>
@@ -827,7 +846,7 @@
                     adipiscing ut, luctus sed, hendrerit vitae, mi.
                 </p>
             </div>
-        </div>*/
+        </div>*!/
         $("#alert").empty();
         $("#alert").append(`<div className="toggler">
             <div id="effect" className="ui-widget-content ui-corner-all">
@@ -865,7 +884,10 @@
 
         $( "#effect" ).hide();
 
-    }
+    }*/
+
+    // run the tryAgain effect
+
 
     function reNewMyHand(){
         $("#myCardBox").empty();
