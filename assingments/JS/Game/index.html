@@ -5,10 +5,11 @@
     <title>JS_Game</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="assets/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 </head>
 <body>
 
-<div class="ui-widget-content ui-corner-all" id="startPage"></div>
+<div id="startPage" class="ui-widget-content ui-corner-all"></div>
 
 <div id="gamePage"></div>
 <div id="playingBox">
@@ -69,9 +70,10 @@
 
 
     $(function(){
-        console.log('done function');
+
         function runEffect() {
 
+            console.log('done function');
             // get effect type from
             var selectedEffect = "puff";
 
@@ -79,19 +81,19 @@
             var options = {};
 
             // Run the effect
-            $( "#startPage" ).show( selectedEffect, options, 20000, callback );
+            $( "#startPage" ).show( selectedEffect, options, 2000, callback );
         };
 
     //callback function to bring a hidden box back
         function callback() {
             setTimeout(function() {
                 $( "#startPage:visible" ).removeAttr( "style" ).fadeOut();
-            }, 10000 );
+            }, 2500 );
         };
 
     // Set effect from select menu value
         runEffect();
-        $("#startPage" ).hide();
+        //$("#startPage" ).hide();
     });
 
 
@@ -173,6 +175,7 @@
                 console.log(value1);
                 setTrumpImg(value1);
                 secondRound();
+                one();
             }
     });
 
@@ -241,28 +244,33 @@
 
 
 
-    one();
-     function one(){
-         $("#myCardBox" ).selectable({
-             selected: function( event, div ) {
-                 cardID = ($(div.selected).attr('id'));
-                 for (let i = 0; i < myHand.length; i++) {
-                     if (cardID==myHand[i].name){
-                         cardTypeVal=myHand[i].typeValue;
-                         cardValue=myHand[i].value;
-                         myBoxIm=myHand[i].image;
-                         ind = i;
-                         break;
-                         console.log('card id ');
-                         console.log(ind);
-                         console.log('card id '+cardTypeVal);
-                     }
-                 }
-                 myPlayerRound(cardTypeVal,cardValue,myBoxIm,ind);
-                 cardsRound1(cardTypeVal);
 
-             }
-         });
+     function one(){
+         if (playerOne.length>0) {
+             $("#myCardBox").selectable({
+                 selected: function (event, div) {
+                     cardID = ($(div.selected).attr('id'));
+                     for (let i = 0; i < myHand.length; i++) {
+                         if (cardID == myHand[i].name) {
+                             cardTypeVal = myHand[i].typeValue;
+                             cardValue = myHand[i].value;
+                             myBoxIm = myHand[i].image;
+                             ind = i;
+                             break;
+                             console.log('card id ');
+                             console.log(ind);
+                             console.log('card id ' + cardTypeVal);
+                         }
+                     }
+                     myPlayerRound(cardTypeVal, cardValue, myBoxIm, ind);
+                     cardsRound1(cardTypeVal);
+
+                 }
+             });
+         }else {
+             alert('select trump in box');
+         }
+
 
      }
 

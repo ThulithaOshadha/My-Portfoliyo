@@ -1,9 +1,12 @@
 #startPage{
     position: absolute;
-    background-image: url("../ui/loading.jpg");
-    background-size: cover;
-    width: 99%;
-    height: 99%;
+    background-image: url("../ui/Untitled-2.jpg");
+    background-size: cover!important;
+    width: 99.8vw;
+    height: 99.8vh;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
 }
 #myCardBox{
     position: absolute;
@@ -221,7 +224,7 @@ color: #5c5252
     position: absolute;
     background-image: url("../ui/map.jpg");
     background-size: cover;
-    width: 99%;
-    height: 99%;
+    width: 99.8vw;
+    height: 99.8vh;
 }
 
